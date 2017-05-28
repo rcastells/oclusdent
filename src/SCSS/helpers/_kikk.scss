@@ -1,0 +1,27 @@
+
+.schedule-item-time{
+	font-family: 'Raleway';
+	color: gray;
+	padding: 20px;
+}
+
+.schedule-item{
+	display: flex;
+	flex-direction: row;
+}
+
+
+.testimo{
+	font-family: 'Raleway';
+	font-weight: 800;
+	color: #F7CAC9;
+	font-size: 120px;
+}
+
+.container{
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	margin-top: 45vh;
+
+}

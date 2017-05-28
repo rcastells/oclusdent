@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Albums</title>
+        <!-- ======== META TAGS ======== -->
+        <meta charset="utf-8">
+        <html lang="en">
+        <meta name="keywords" content="porttolio, Alina Zugulova">   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- ======== / META TAGS ======== -->
+        <!-- ======== STYLESHEETS & FONTS ======== -->
+        <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One|EB+Garamond' rel='stylesheet' type='text/css'>
+        <!-- ======== / STYLESHEETS & FONTS ======== -->
+        <!-- ======== STANDARD SCRIPTS ======== -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <!-- ======== / STANDARD SCRIPTS ======== -->
+    </head>
+
+    <body>
+
+        <div class="page-container">
+
+             <div class="content-area-albums">
+                <div class="album-tile album-tile-italy">
+                    <a href="italy.html" class="album-title">Italy</a>
+                </div>
+                <div class="album-tile album-tile-france">
+                    <a href="france.html" class="album-title">France</a>
+                </div>
+                <div class="album-tile album-tile-malaysia">
+                    <a href="malaysia.html" class="album-title">Malaysia</a>
+                </div>
+                <div class="album-tile album-tile-bolivia">
+                    <a href="bolivia.html" class="album-title">Bolivia</a>
+                </div>
+                <div class="album-tile album-tile-canada">
+                    <a href="canada.html" class="album-title">Canada</a>
+                </div>
+                <div class="album-tile album-tile-usa">
+                    <a href="usa.html" class="album-title">USA</a>
+                </div>
+
+        </div>
+
+
+
+            <div class="header-area">
+
+                <div class="mobile-nav">
+
+                    <div class="btn-open">
+                        <div></div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="btn-close">&times;</div>
+
+                    <nav class="responsive-menu">
+                     <ul>
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="contents/italy.html">Italy</a></li>
+                        <li><a href="contents/france.html">France</a></li>
+                        <li><a href="contents/malaysia.html">Malaysia</a></li>
+                        <li><a href="contents/bolivia.html">Bolivia</a></li>
+                        <li><a href="contents/canada.html">Canada</a></li>
+                        <li><a href="contents/usa.html">USA</a></li>
+                        <li><a href="contents/about.html">About</a></li>
+                     </ul>
+                    </nav>
+                </div> 
+            </div>
+
+        </div>
+
+
+    <script type="text/javascript">
+     jQuery(function($){
+         $( '.btn-open' ).click(function(){
+             $('.responsive-menu').addClass('expand')
+             $('.btn-open').addClass('btn-none')
+             $('.btn-close').addClass('btn-flex')
+         })
+
+         $( '.btn-close' ).click(function(){
+             $('.responsive-menu').removeClass('expand')
+             $('.btn-open').removeClass('btn-none')
+             $('.btn-close').removeClass('btn-flex')
+         })
+     })
+ </script>
+
+</body>
+
+
+
+
+
+
+
+
+
+

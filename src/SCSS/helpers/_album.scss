@@ -1,0 +1,20 @@
+.img-box-one{
+	img{
+	max-width: 100%;
+	}	
+}
+
+
+
+.img-box-two{
+	float:left;
+}
+
+.img-two{
+	max-width:100%;
+	@media screen and (min-width: $desktop-width) {
+	max-width:49.7%;
+	height: auto;
+	}
+
+}

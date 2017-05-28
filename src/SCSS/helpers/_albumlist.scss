@@ -1,0 +1,95 @@
+.content-area-albums{
+	display: flex;
+	flex-wrap:wrap;
+	align-items:center;
+	width: 100%;
+}
+
+.album-title{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background-color: black;
+	opacity: 0.5;
+	width: 100%;
+	min-height: 33vh;
+	margin: 0px;
+	text-decoration: none;
+	color:white;
+	@media screen and (min-width: $desktop-width) {
+	display: none;
+	opacity: 0.7;
+	}
+}
+
+
+
+.album-tile{
+	min-width: 320px;
+	flex-basis: 100%;
+	flex-growth:1;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction: row;
+	min-height: 33vh;
+	color:white;
+
+	@media screen and (min-width: $tablet-width) {
+		flex-basis: 50%;
+	}
+
+	&:hover > .album-title {
+		display: flex;
+		width: 100%;
+		height:100%;
+	}
+
+	&-italy{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('../img/italy/France2015164.jpg');
+	cursor: pointer;
+	}
+
+	&-france{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('../img/france/France2015101.jpg');
+	cursor: pointer;
+	}
+
+	&-malaysia{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('../img/malaysia/img842.jpg');
+	cursor: pointer;
+	}
+
+	&-bolivia{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('../img/bolivia/Spring2015223.jpg');
+	cursor: pointer;
+	}
+
+	&-canada{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('../img/canada/img117.jpg');
+	cursor: pointer;
+	}
+
+	&-usa{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('../img/usa/img558.jpg');
+	cursor: pointer;
+	}
+
+}
+
+
+
+
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Italy by Alina Zugulova</title>
+        <!-- ======== META TAGS ======== -->
+        <meta charset="utf-8">
+        <html lang="en">
+        <meta name="keywords" content="porttolio, Alina Zugulova">   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- ======== / META TAGS ======== -->
+        <!-- ======== STYLESHEETS & FONTS ======== -->
+        <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One|EB+Garamond' rel='stylesheet' type='text/css'>
+        <!-- ======== / STYLESHEETS & FONTS ======== -->
+        <!-- ======== STANDARD SCRIPTS ======== -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <!-- ======== / STANDARD SCRIPTS ======== -->
+    </head>
+
+    <body>
+
+        <div class="page-container">
+
+
+            <div class="content-area">
+                <div class="img-box-one">
+                    <img src="img/italy/Italy2015037.jpg" alt="An image of an arc">
+                </div>
+                <div class="img-box-two">
+                    <img class="img-two" src="img/italy/Italy2015078.jpg" alt="An image of a breakfast table with fresh croissant">
+                    <img class="img-two" src="img/italy/Italy2015021.jpg" alt="An image of wine bottles"> 
+                </div>
+                <div class="img-box-one">
+                    <img src="img/italy/Italy2015025.jpg" alt="Door in Italy" alt="An image of the entrance of a wine bar">
+                </div>
+                <div class="img-box-two">
+                    <img class="img-two" src="img/italy/Italy2015075.jpg" alt="A portrait of a girl">
+                    <img class="img-two" src="img/italy/Italy2015047.jpg" alt="An image of a village in Tuscany"> 
+                </div>
+                <div class="img-box-one">
+                    <img src="img/italy/Italy2015049.jpg" alt="An image of a village in Tuscany from the top">
+                </div>
+            </div>
+
+            <div class="header-area">
+
+                <div class="mobile-nav">
+
+                    <div class="btn-open">
+                        <div></div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="btn-close">&times;</div>
+
+                    <nav class="responsive-menu">
+                     <ul>
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="italy.html">Italy</a></li>
+                        <li><a href="france.html">France</a></li>
+                        <li><a href="malaysia.html">Malaysia</a></li>
+                        <li><a href="bolivia.html">Bolivia</a></li>
+                        <li><a href="canada.html">Canada</a></li>
+                        <li><a href="usa.html">USA</a></li>
+                        <li><a href="about.html">About</a></li>
+                     </ul>
+                    </nav>
+                </div> 
+            </div>
+
+        </div>
+
+    <a href="#" class="back-to-top">Back to Top</a>
+
+    <script type="text/javascript">
+     jQuery(function($){
+         $( '.btn-open' ).click(function(){
+             $('.responsive-menu').addClass('expand')
+             $('.btn-open').addClass('btn-none')
+             $('.btn-close').addClass('btn-flex')
+         })
+
+         $( '.btn-close' ).click(function(){
+             $('.responsive-menu').removeClass('expand')
+             $('.btn-open').removeClass('btn-none')
+             $('.btn-close').removeClass('btn-flex')
+         })
+     })
+
+     $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+
+     var amountScrolled = 300;
+
+     $(window).scroll(function() {
+        if ( $(window).scrollTop() > amountScrolled ) {
+            $('a.back-to-top').fadeIn('slow');
+            $('.header-area').fadeOut('slow');
+            $('.content-area').css('flex-basis','100%');
+        } else {
+            $('a.back-to-top').fadeOut('slow');
+            $('.header-area').fadeIn('slow');
+            $('.content-area').css('flex-basis','97%');
+        }
+    });
+
+     $('a.back-to-top, a.simple-back-to-top').click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 700);
+        return false;
+    });
+
+
+    </script>
+
+</body>
+
+
+
+
+
+
+
+
+
+

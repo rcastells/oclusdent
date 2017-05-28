@@ -1,0 +1,15 @@
+.page-container{
+	display: flex;
+	flex-direction:column-reverse;
+	width:100%;
+	margin: 0px;
+	padding: 0px;
+	@media screen and (min-width: $desktop-width) {
+	flex-direction:row;
+	}
+}
+
+
+.content-area{
+	flex-basis:97%;
+}
