@@ -18,3 +18,8 @@
 # Gradle:
 .idea/**/gradle.xml
 .idea/**/libraries
+
+package.json
+gulpfile.js
+
+node_modules/*
