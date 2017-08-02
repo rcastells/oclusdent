@@ -4,165 +4,6 @@ h1, h2, h3, p, a {
 p {
   font-size: 1rem; }
 
-.album-tile {
-  font: 100% "Raleway";
-  font-size: 3rem;
-  text-transform: uppercase; }
-
-.about-text p {
-  text-align: center;
-  margin: 0 20px;
-  line-height: 30px; }
-
-.content-area-albums {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%; }
-
-.album-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: black;
-  opacity: 0.5;
-  width: 100%;
-  min-height: 33vh;
-  margin: 0px;
-  text-decoration: none;
-  color: white; }
-  @media screen and (min-width: 1024px) {
-    .album-title {
-      display: none;
-      opacity: 0.7; } }
-
-.album-tile {
-  min-width: 320px;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  flex-growth: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  min-height: 33vh;
-  color: white; }
-  @media screen and (min-width: 768px) {
-    .album-tile {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
-  .album-tile:hover > .album-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    height: 100%; }
-  .album-tile-italy {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../img/italy/France2015164.jpg");
-    cursor: pointer; }
-  .album-tile-france {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../img/france/France2015101.jpg");
-    cursor: pointer; }
-  .album-tile-malaysia {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../img/malaysia/img842.jpg");
-    cursor: pointer; }
-  .album-tile-bolivia {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../img/bolivia/Spring2015223.jpg");
-    cursor: pointer; }
-  .album-tile-canada {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../img/canada/img117.jpg");
-    cursor: pointer; }
-  .album-tile-usa {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../img/usa/img558.jpg");
-    cursor: pointer; }
-
-.menu {
-  text-transform: uppercase; }
-
-.menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  background: white;
-  width: 100%;
-  position: fixed; }
-
-.menu ul li {
-  float: left; }
-
-.menu ul li a {
-  display: block !important;
-  top: 0;
-  padding: 20px 50px;
-  text-decoration: none;
-  font-size: 18px;
-  z-index: 3;
-  width: 100%; }
-
-a:hover, a:focus, a:active {
-  opacity: 0.5; }
-
-body {
-  background-color: none;
-  margin: 0px;
-  padding: 0px; }
-
-a.back-to-top {
-  display: none;
-  width: 60px;
-  height: 60px;
-  text-indent: -9999px;
-  position: fixed;
-  z-index: 999;
-  right: 20px;
-  bottom: 20px;
-  background: url("../img/functional/backtotop.png") no-repeat center 43%;
-  border-radius: 30px; }
-  @media screen and (min-width: 1024px) {
-    a.back-to-top {
-      right: 100px;
-      width: 100px;
-      height: 100px;
-      width: 80px;
-      height: 80px;
-      border-radius: 40px; } }
-  a.back-to-top:hover {
-    background-color: black; }
-
 body {
   width: 100%;
   height: 100%; }
@@ -175,6 +16,10 @@ html {
   .navbar {
     padding: 20px 0;
     transition: background .5s ease-in-out,padding .5s ease-in-out; }
+  .navbar-fixed-top {
+    position: fixed;
+    background: white;
+    width: 100%; }
   .top-nav-collapse {
     padding: 0; } }
 

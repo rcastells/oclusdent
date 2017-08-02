@@ -16,6 +16,12 @@ html {
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 
+    .navbar-fixed-top {
+        position: fixed;
+        background: white;
+        width: 100%;
+    }
+
     .top-nav-collapse {
         padding: 0;
     }

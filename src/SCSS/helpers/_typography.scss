@@ -8,34 +8,3 @@ h1, h2, h3, p, a {
 p{
 	font-size: 1rem;
 }
-
-.album-tile{
-	font: 100% $font-stack;
-	font-size: 3rem;
-	text-transform: uppercase;
-}
-
-
-.about-text p{
-	text-align: center;
-	margin: 0 20px;
-	line-height: 30px
-}
-
-@mixin tablet {
-	@media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
-		.about-text p{
-			text-align: center;
-			margin: 0 100px;
-		}
-	}
-}
-
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
-		.about-text p{
-			text-align: center;
-			margin: 0 200px;
-		}
-  }
-}

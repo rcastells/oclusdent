@@ -8,6 +8,7 @@ var browserSync = require('browser-sync').create();
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 var ghPages = require('gulp-gh-pages');
+var include = require('gulp-include');
  
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
@@ -28,6 +29,15 @@ var onError = function(err) {
 
 var input = 'src/SCSS/*.scss';
 var output = 'dist/css';
+
+gulp.task("scripts", function() {
+  console.log("-- gulp is running task 'scripts'");
+ 
+  gulp.src("src/js/scrolling-nav.js")
+    .pipe(include())
+      .on('error', console.log)
+    .pipe(gulp.dest('dist/js'));
+});
 
 gulp.task('sass', function () {
   return gulp
@@ -77,6 +87,7 @@ gulp.task('default', ['css','html'], function() {
     });
     gulp.watch('src/scss/**/*.scss',['css']);
     gulp.watch('src/*.html',['html']);
+    gulp.watch('src/js/*.js',['scripts']);
     gulp.watch('./dist/*.html').on('change', browserSync.reload)
 });
 
