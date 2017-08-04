@@ -550,12 +550,17 @@ section h3.section-subheading {
 .team-member p {
   margin-top: 0;
 }
-aside.clients img {
-  margin: 50px auto;
+.contact-text {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: serif-font;
+  color: white;
+  margin: 15px 0;
+  text-transform: none;
 }
 section#contact {
   background-color: #222222;
-  background-image: url('../img/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
 }
