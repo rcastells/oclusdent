@@ -438,6 +438,7 @@ section {
     }
 }
 
+
 @media(min-width:768px) {
     .timeline {
         &:before {
@@ -542,12 +543,21 @@ section {
     height: 250px;
 }
 
-.carousel-inner .active.left { left: -33%; }
-.carousel-inner .next        { left:  33%; }
-.carousel-inner .prev        { left: -33%; }
-.carousel-control.left,.carousel-control.right {background-image:none;}
-.item:not(.prev) {visibility: visible;}
-.item.right:not(.prev) {visibility: hidden;}
+.carousel-control {
+    margin -50px;
+}
+
+.carousel-control.left,.carousel-control.right {
+    background-image:none;
+    margin: -50px;
+}
+
+.carousel-indicators {
+    top: 0px;
+    margin: -50px;
+}
+
+
 .rightest{ visibility: visible;}
 
 // Contact Section
