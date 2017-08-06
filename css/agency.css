@@ -7,6 +7,9 @@ body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+body > .section {
+  padding: 50px;
+}
 .text-muted {
   color: #777777;
 }
@@ -45,6 +48,11 @@ h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+}
+.section {
+  margin: 0px;
+  padding: 0px;
+  top: 0px;
 }
 .img-centered {
   margin: 0 auto;
@@ -147,12 +155,12 @@ fieldset[disabled] .btn-xl.active {
   background-color: white;
 }
 .navbar-custom {
-  background-color: #222222;
+  background-color: black;
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
   color: #0ad9b3;
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
@@ -189,13 +197,13 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
-  color: white;
-  background-color: #0ad9b3;
+  color: #08a88b;
+  background-color: transparent;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
-  color: white;
-  background-color: #08a88b;
+  color: #08a88b;
+  background-color: transparent;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -536,11 +544,10 @@ section h3.section-subheading {
 }
 .team-member {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .team-member img {
   margin: 0 auto;
-  border: 7px solid white;
 }
 .team-member h4 {
   margin-top: 25px;
@@ -549,6 +556,32 @@ section h3.section-subheading {
 }
 .team-member p {
   margin-top: 0;
+}
+.team-image {
+  width: 350px;
+  height: 350px;
+}
+.carousel-inner .active.left {
+  left: -33%;
+}
+.carousel-inner .next {
+  left: 33%;
+}
+.carousel-inner .prev {
+  left: -33%;
+}
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+.item:not(.prev) {
+  visibility: visible;
+}
+.item.right:not(.prev) {
+  visibility: hidden;
+}
+.rightest {
+  visibility: visible;
 }
 .contact-text {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;

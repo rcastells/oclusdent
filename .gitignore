@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 node_modules
 =======
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
@@ -26,4 +25,6 @@ package.json
 gulpfile.js
 
 node_modules/*
->>>>>>> refs/remotes/origin/master
+
+.DS_Store/*
+.gitignore
