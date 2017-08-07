@@ -548,6 +548,8 @@ section h3.section-subheading {
 }
 .team-member img {
   margin: 0 auto;
+  width: 250px;
+  height: 250px;
 }
 .team-member h4 {
   margin-top: 25px;
@@ -560,6 +562,9 @@ section h3.section-subheading {
 .team-image {
   width: 250px;
   height: 250px;
+}
+.carousel-control {
+  margin: -50px;
 }
 .carousel-control.left,
 .carousel-control.right {
