@@ -7,9 +7,6 @@ body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-body > .section {
-  padding: 50px;
-}
 .text-muted {
   color: #777777;
 }
@@ -51,7 +48,7 @@ h6 {
 }
 .section {
   margin: 0px;
-  padding: 0px;
+  padding: 50px;
   top: 0px;
 }
 .img-centered {
@@ -223,6 +220,9 @@ fieldset[disabled] .btn-xl.active {
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;
   }
+  .navbar-custom .btn {
+    font-size: 1.5em;
+  }
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
@@ -230,6 +230,9 @@ fieldset[disabled] .btn-xl.active {
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
+    font-size: 1.5em;
+  }
+  .navbar-custom.affix .btn {
     font-size: 1.5em;
   }
 }
@@ -581,21 +584,16 @@ section h3.section-subheading {
   margin-top: 0;
 }
 .contact-text {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font: serif-font;
-  color: white;
+  color: black;
   margin: 15px 0;
   text-transform: none;
 }
 section#contact {
-  background-color: #222222;
   background-position: center;
   background-repeat: no-repeat;
 }
 section#contact .section-heading {
-  color: white;
+  color: black;
 }
 section#contact .form-group {
   margin-bottom: 25px;

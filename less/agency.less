@@ -8,10 +8,6 @@ body {
     .body-font;
 }
 
-body > .section {
-    padding: 50px;
-}
-
 .text-muted {
     color: @gray-light;
 }
@@ -55,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section {
     margin: 0px;
-    padding: 0px;
+    padding: 50px;
     top: 0px;
 }
 
@@ -163,6 +159,9 @@ h1, h2, h3, h4, h5, h6 {
         .navbar-nav>.active>a {
             border-radius: 3px;
         }
+        .btn {
+            font-size: 1.5em;
+        }
     }
 }
 
@@ -173,6 +172,9 @@ h1, h2, h3, h4, h5, h6 {
         background-color: @gray-darker;
         padding: 10px 0;
         .navbar-brand {
+            font-size: 1.5em;
+        }
+        .btn {
             font-size: 1.5em;
         }
     }
@@ -566,21 +568,18 @@ section {
 // Contact Section
 
 .contact-text {
-    .heading-font;
-    .serif-font;
-    font: serif-font;
-    color: white;
+    color: black;
     margin: 15px 0;
     text-transform: none;
 }
 
 section#contact {
-    background-color: @gray-darker;
+    //background-color: @gray-darker;
     //background-image: url('../img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
     .section-heading {
-        color: white;
+        color: black;
     }
     .form-group {
         margin-bottom: 25px;
