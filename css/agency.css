@@ -557,6 +557,10 @@ section h3.section-subheading {
 .team-member p {
   margin-top: 0;
 }
+.carousel-control {
+  color: #0ad9b3;
+  background-image: none;
+}
 section#contact {
   background-position: center;
   background-repeat: no-repeat;
