@@ -560,6 +560,7 @@ section h3.section-subheading {
 .carousel-control {
   color: #0ad9b3;
   background-image: none;
+  margin: -50px;
 }
 section#contact {
   background-position: center;
