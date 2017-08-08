@@ -212,16 +212,13 @@ fieldset[disabled] .btn-xl.active {
     border: none;
   }
   .navbar-custom .navbar-brand {
-    font-size: 2em;
+    font-size: 1.5em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;
-  }
-  .navbar-custom .btn {
-    font-size: 1.5em;
   }
 }
 @media (min-width: 768px) {
@@ -232,17 +229,8 @@ fieldset[disabled] .btn-xl.active {
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
   }
-  .navbar-custom.affix .navbar-left {
-    width: 100px;
-  }
-  .navbar-custom.affix .btn {
-    font-size: 1em;
-    margin-left: 0px;
-  }
 }
 header {
-  min-height: 1000px;
-  height: 1000px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/clinicadental.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -568,11 +556,6 @@ section h3.section-subheading {
 }
 .team-member p {
   margin-top: 0;
-}
-.contact-text {
-  color: black;
-  margin: 15px 0;
-  text-transform: none;
 }
 section#contact {
   background-position: center;
