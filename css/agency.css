@@ -200,7 +200,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   color: #08a88b;
-  background-color: #08a88b;
+  background-color: transparent;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -236,7 +236,7 @@ fieldset[disabled] .btn-xl.active {
     width: 100px;
   }
   .navbar-custom.affix .btn {
-    font-size: 1.5em;
+    font-size: 1em;
     margin-left: 0px;
   }
 }
