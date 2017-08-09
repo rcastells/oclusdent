@@ -519,47 +519,68 @@
                 </div>
             </div>
 
-            <!-- Team PC format -->
-            <div class="row hidden-xs">
-                <div class="col-md-4 col-sm-4 team-member">
-                    <img src="img/team/Jordi_Alarcon.png" class="img-responsive img-circle" alt="">
-                    <h4>Jordi Alarcón</h4>
-                    <p class="text-muted">Doctor Cirujano y estecién</p>
-                </div>
-                <div class="col-md-4 col-sm-4 team-member">
-                    <img src="img/team/Eduardo_Alarcon.png" class="img-responsive img-circle" alt="">
-                    <h4>Eduardo Pérez Alarcón</h4>
-                    <p class="text-muted">Doctor Cirujano y estecién</p>
-                </div>
-                <div class="col-md-4 col-sm-4 team-member">
-                    <img src="img/team/Neus_Bartran.png" class="img-responsive img-circle" alt="">
-                    <h4>Neus Bartrán</h4>
-                    <p class="text-muted">Administración</p>
-                </div>
-            </div>
 
-            <div class="row hidden-xs">
-                <div class="col-md-3 col-sm-3 team-member">
-                    <img src="img/team/Joaquim_Alarcon.png" class="img-responsive img-circle" alt="">
-                    <h4>Joaquim Alarcón</h4>
-                    <p class="text-muted">Finanzas</p>
-                </div>
-                <div class="col-md-3 col-sm-3 team-member">
-                    <img src="img/team/Auxiliar1.png" class="img-responsive img-circle" alt="">
-                    <h4>Auxiliar1</h4>
-                    <p class="text-muted">Auxiliar1</p>
-                </div>
-                <div class="col-md-3 col-sm-3 team-member">
-                    <img src="img/team/Auxiliar2.png" class="img-responsive img-circle" alt="">
-                    <h4>Auxiliar2</h4>
-                    <p class="text-muted">Auxiliar2</p>
-                </div>
-                <div class="col-md-3 col-sm-3 team-member">
-                    <img src="img/team/Auxiliar3.png" class="img-responsive img-circle" alt="">
-                    <h4>Auxiliar3</h4>
-                    <p class="text-muted">Auxiliar3</p>
+        <div class="container hidden-xs">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="carousel slide multi-item-carousel" id="theCarousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                               <div class="col-md-4 col-sm-4 team-member">
+                                    <img src="img/team/Jordi_Alarcon.png" class="img-responsive img-circle" alt="">
+                                    <h4>Jordi Alarcón</h4>
+                                    <p class="text-muted">Doctor Cirujano y estecién</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4 col-sm-4 team-member">
+                                    <img src="img/team/Eduardo_Alarcon.png" class="img-responsive img-circle" alt="">
+                                    <h4>Eduardo Pérez Alarcón</h4>
+                                    <p class="text-muted">Doctor Cirujano y estecién</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4 col-sm-4 team-member">
+                                    <img src="img/team/Neus_Bartran.png" class="img-responsive img-circle" alt="">
+                                    <h4>Neus Bartrán</h4>
+                                    <p class="text-muted">Administración</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4 col-sm-4 team-member">
+                                    <img src="img/team/Joaquim_Alarcon.png" class="img-responsive img-circle" alt="">
+                                    <h4>Joaquim Alarcón</h4>
+                                    <p class="text-muted">Finanzas</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4 col-sm-4 team-member">
+                                    <img src="img/team/Auxiliar1.png" class="img-responsive img-circle" alt="">
+                                    <h4>Auxiliar1</h4>
+                                    <p class="text-muted">Auxiliar1</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4 col-sm-4 team-member">
+                                    <img src="img/team/Auxiliar2.png" class="img-responsive img-circle" alt="">
+                                    <h4>Auxiliar2</h4>
+                                    <p class="text-muted">Auxiliar2</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4 col-sm-4 team-member">
+                                    <img src="img/team/Auxiliar3.png" class="img-responsive img-circle" alt="">
+                                    <h4>Auxiliar3</h4>
+                                    <p class="text-muted">Auxiliar3</p>
+                                </div>
+                            </div>
+                        </div>
+                    <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                    <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                    </div>
                 </div>
             </div>
+        </div>
 
         <!-- Team phone format with carousel -->
         <div id="teamCarousel" class="carousel slide hidden-lg hidden-sm hidden-md" data-ride="carousel">
@@ -921,6 +942,29 @@
             $(this).carousel('next');  
         });  
     });  
+    </script>
+
+    <script>
+    // Instantiate the Bootstrap carousel
+    $('.multi-item-carousel').carousel({
+        interval: false
+    });
+
+    // for every slide in carousel, copy the next slide's item in the slide.
+    // Do the same for the next, next item.
+    $('.multi-item-carousel .item').each(function(){
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+  
+    if (next.next().length>0) {
+        next.next().children(':first-child').clone().appendTo($(this));
+    } else {
+    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+    }
+    });
     </script>
 
 <!--
