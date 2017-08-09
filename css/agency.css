@@ -217,6 +217,9 @@ fieldset[disabled] .btn-xl.active {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
+  .navbar-custom .navbar-left {
+    margin-left: 10px;
+  }
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;
   }
@@ -231,8 +234,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  min-height: 100%;
-  height: 100%;
+  height: auto;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/clinicadental.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;

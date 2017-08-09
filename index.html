@@ -891,6 +891,19 @@
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+
+    <!-- Swipe feature -->
+    <script>
+    $(document).ready(function() {  
+        $("#portfolioCarousel").swiperight(function() {  
+            $(this).carousel('prev');  
+            });  
+        $("#portfolioCarousel").swipeleft(function() {  
+            $(this).carousel('next');  
+        });  
+    });  
+    </script>
+
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
