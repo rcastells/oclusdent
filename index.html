@@ -668,14 +668,11 @@
         </div>
     </section>
 
-
-    <footer class="footer text-center hidden-sm hidden-md hidden-lg" style="width: 100%; background-color: black; text-align: center;">
-      <div class="container bg-primary" style="width: 100%; background-color: black;">
-        <div class="row">
-        <a href="tel:93 447 05 30" style="position: fixed; bottom: 5px;" class="btn btn-primary btn-md hidden-lg hidden-md hidden-sm"><span class="fa fa-phone"></span> Llámanos 93 447 05 30</a></a>
-      </div>
-      </div>
-    </footer>
+    <div class="container">
+        <div class="col-xs-4 text-center">
+            <a href="tel:93 447 05 30" style="position: fixed; bottom: 0px; left: auto; right: auto;" class="btn btn-primary btn-lg hidden-lg hidden-md hidden-sm"><span class="fa fa-phone"></span> Llámanos</a></a>
+        </div>
+    </div>
 
     <footer>
         <div class="container">
@@ -899,6 +896,17 @@
             $(this).carousel('prev');  
             });  
         $("#portfolioCarousel").swipeleft(function() {  
+            $(this).carousel('next');  
+        });  
+    });  
+    </script>
+
+    <script>
+    $(document).ready(function() {  
+        $("#servicesCarousel").swiperight(function() {  
+            $(this).carousel('prev');  
+            });  
+        $("#servicesCarousel").swipeleft(function() {  
             $(this).carousel('next');  
         });  
     });  
