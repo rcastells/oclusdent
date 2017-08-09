@@ -584,9 +584,10 @@ section h3.section-subheading {
     transform: none!important;
   }
 }
-.multi-item-carousel .carouse-control.left,
-.multi-item-carousel .carouse-control.right {
+.multi-item-carousel .carousel-control.left,
+.multi-item-carousel .carousel-control.right {
   background-image: none;
+  margin: -100px;
 }
 .carousel-indicators {
   bottom: -30px;
