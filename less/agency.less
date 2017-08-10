@@ -617,46 +617,11 @@ section#contact {
     .section-heading {
         color: black;
     }
-    .form-group {
-        margin-bottom: 25px;
-        input,
-        textarea {
-            padding: 20px;
-        }
-        input.form-control {
-            height: auto;
-        }
-        textarea.form-control {
-            height: 236px;
-        }
-    }
-    .form-control:focus {
-        border-color: @theme-primary;
-        box-shadow: none;
-    }
-    ::-webkit-input-placeholder {
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
-    }
-    :-moz-placeholder { /* Firefox 18- */
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
-    }
-    ::-moz-placeholder {  /* Firefox 19+ */
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
-    }
-    :-ms-input-placeholder {  
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
-    }
-    .text-danger {
-        color: @theme-danger;
-    }
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
 }
 
 // Footer
@@ -674,33 +639,6 @@ footer {
         line-height: 40px;
         .heading-font;
         text-transform: none;
-    }
-}
-
-// Social Buttons
-
-ul.social-buttons {
-    margin-bottom: 0;
-    li {
-        a {
-            display: block;
-            background-color: @gray-darker;
-            height: 40px;
-            width: 40px;
-            border-radius: 100%;
-            font-size: 20px;
-            line-height: 40px;
-            color: white;
-            outline: none;
-            -webkit-transition: all 0.3s;
-            -moz-transition: all 0.3s;
-            transition: all 0.3s;
-            &:hover,
-            &:focus,
-            &:active {
-                background-color: @theme-primary;
-            }
-        }
     }
 }
 
