@@ -28,6 +28,18 @@ gulp.task('less', function() {
         }))
 });
 
+// Compile LESS files from /less into /css
+gulp.task('less', function() {
+    return gulp.src('less/languages.less')
+        .pipe(less())
+        .pipe(header(banner, { pkg: pkg }))
+        .pipe(gulp.dest('css'))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
+});
+
+
 // Minify compiled CSS
 gulp.task('minify-css', ['less'], function() {
     return gulp.src('css/agency.css')
