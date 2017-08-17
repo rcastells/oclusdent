@@ -87,16 +87,16 @@ h1, h2, h3, h4, h5, h6 {
 // Custom Navigation Bar
 
 .navbar-custom {
-    background-color: black;
+    background-color: @theme-primary;
     border-color: transparent;
     .navbar-brand {
-        color: @theme-primary;
+        color: white;
         .script-font;
         &:hover,
         &:focus,
         &:active,
         &.active {
-            color: darken(@theme-primary, 10%);
+            color: darken(@white, 10%);
         }
     }
     .navbar-collapse {
@@ -106,11 +106,11 @@ h1, h2, h3, h4, h5, h6 {
         background-color: @theme-primary;
         border-color: @theme-primary;
         .heading-font;
-        color: white;
+        color: black;
         font-size: 12px;
         &:hover,
         &:focus {
-            background-color: @theme-primary;
+            background-color: white;
         }
     }
     .nav {
@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5, h6 {
                 color: white;
                 &:hover,
                 &:focus {
-                    color: @theme-primary;
+                    color: @gray-base;
                     outline: none;
                 }
             }
@@ -130,15 +130,13 @@ h1, h2, h3, h4, h5, h6 {
     }
     .navbar-nav>.active>a {
         border-radius: 0;
-        color: darken(@theme-primary, 10%);
-        //background-color: transparent;
-        background-color: @theme-primary;
+        color: darken(@gray-base, 10%);
+        background-color: transparent;
     }
     .navbar-nav>.active>a:hover,
     .navbar-nav>.active>a:focus {
-        color: darken(@theme-primary, 10%);
+        color: darken(@gray-base, 10%);
         background-color: transparent;
-        //background-color: darken(@theme-primary, 10%);
     }
 }
 
@@ -169,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media(min-width:768px) {
     .navbar-custom.affix {
-        background-color: @gray-darker;
+        background-color: @theme-primary;
         padding: 10px 0;
         .navbar-brand {
             font-size: 1.5em;
