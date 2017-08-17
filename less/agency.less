@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
         &:focus,
         &:active,
         &.active {
-            color: darken(@white, 10%);
+            color: darken(white, 10%);
         }
     }
     .navbar-collapse {
@@ -567,8 +567,8 @@ section {
   }
   .carousel-control{
     &.left, &.right{
-      //background-image: none;
       margin: -100px;
+      margin-bottom: 0px;
     }
   }
 }
@@ -580,8 +580,9 @@ section {
 
 .carousel-control{
     color: @theme-primary;
-    //background-image: none;
-    margin: -50px;
+    margin-left: -50px;
+    margin-right: -50px;
+    margin-top: -50px;
 }
 
 // Contact Section

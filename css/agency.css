@@ -163,7 +163,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: #5a8b8d;
+  color: #e6e6e6;
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
@@ -587,6 +587,7 @@ section h3.section-subheading {
 .multi-item-carousel .carousel-control.left,
 .multi-item-carousel .carousel-control.right {
   margin: -100px;
+  margin-bottom: 0px;
 }
 .carousel-indicators {
   bottom: -30px;
@@ -594,7 +595,9 @@ section h3.section-subheading {
 }
 .carousel-control {
   color: #74a4a6;
-  margin: -50px;
+  margin-left: -50px;
+  margin-right: -50px;
+  margin-top: -50px;
 }
 section#contact {
   background-position: center;
