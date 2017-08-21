@@ -164,6 +164,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
   color: white;
+  text-decoration: underline;
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
@@ -189,17 +190,20 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #000;
+  color: white;
+  text-decoration: underline;
   outline: none;
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
-  color: #000000;
+  color: white;
+  text-decoration: underline;
   background-color: transparent;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
-  color: #000000;
+  color: white;
+  text-decoration: underline;
   background-color: transparent;
 }
 @media (min-width: 768px) {

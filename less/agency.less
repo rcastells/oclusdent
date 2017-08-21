@@ -98,6 +98,7 @@ h1, h2, h3, h4, h5, h6 {
         &.active {
             //color: darken(@gray-base, 10%);
             color: white;
+            text-decoration: underline;
         }
     }
     .navbar-collapse {
@@ -123,7 +124,8 @@ h1, h2, h3, h4, h5, h6 {
                 color: white;
                 &:hover,
                 &:focus {
-                    color: @gray-base;
+                    color: white;
+                    text-decoration: underline;
                     outline: none;
                 }
             }
@@ -131,12 +133,16 @@ h1, h2, h3, h4, h5, h6 {
     }
     .navbar-nav>.active>a {
         border-radius: 0;
-        color: darken(@gray-base, 10%);
+        //color: darken(@gray-base, 10%);
+        color: white;
+        text-decoration: underline;
         background-color: transparent;
     }
     .navbar-nav>.active>a:hover,
     .navbar-nav>.active>a:focus {
-        color: darken(@gray-base, 10%);
+        //color: darken(@gray-base, 10%);
+        color: white;
+        text-decoration: underline;
         background-color: transparent;
     }
 }
