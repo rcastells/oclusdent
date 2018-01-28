@@ -87,17 +87,17 @@ h1, h2, h3, h4, h5, h6 {
 // Custom Navigation Bar
 
 .navbar-custom {
-    background-color: @theme-primary;
+    //background-color: @theme-primary;
     border-color: transparent;
     .navbar-brand {
-        color: white;
+        color: black;
         .script-font;
         &:hover,
         &:focus,
         &:active,
         &.active {
-            //color: darken(@gray-base, 10%);
-            color: white;
+            color: darken(@gray-base, 10%);
+            //color: white;
             text-decoration: underline;
         }
     }
@@ -119,12 +119,12 @@ h1, h2, h3, h4, h5, h6 {
         li {
             a {
                 .heading-font;
-                font-weight: 400;
+                font-weight: 600;
                 letter-spacing: 1px;
-                color: white;
+                color: black;
                 &:hover,
                 &:focus {
-                    color: white;
+                    color: black;
                     text-decoration: underline;
                     outline: none;
                 }
@@ -182,18 +182,30 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+section#home {
+    background-image: url('../img/map-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    .section-heading {
+        color: black;
+    }
+}
+
 header {
     height: auto;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/clinicadental.jpg');
+    //background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/clinicadental.jpg');
+    background: url('../img/clinicadental.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: center center;
-    .background-cover;
-    text-align: center;
-    color: white;
+    background-position: left center;
+    background-size: 1200px 900px;    
+    //.background-cover;
+    text-align: left;
+    color: black;
     .intro-text {
         padding-top: 100px;
         padding-bottom: 50px;
+        padding-left: 50px;
         .intro-lead-in {
             .serif-font;
             font-style: italic;
@@ -203,8 +215,8 @@ header {
         }
         .intro-heading {
             .heading-font;
-            font-weight: 700;
-            font-size: 30px;
+            font-weight: 200;
+            font-size: 20px;
             line-height: 30px;
             margin-bottom: 25px;
         }
@@ -501,6 +513,7 @@ section {
         }
     }
 }
+
 
 @media(min-width:1200px) {
     .timeline {
