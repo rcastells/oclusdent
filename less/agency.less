@@ -88,21 +88,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-custom {
     //background-color: @theme-primary;
+    padding: 15px 0;
     border-color: transparent;
     .navbar-brand {
         color: black;
         .script-font;
-        &:hover,
-        &:focus,
-        &:active,
-        &.active {
-            color: darken(@gray-base, 10%);
-            //color: white;
-            text-decoration: underline;
-        }
     }
     .navbar-collapse {
-        border-color: fade(white, 2%);
+        border-color: white;
     }
     .navbar-toggle {
         background-color: @theme-primary;
@@ -133,24 +126,23 @@ h1, h2, h3, h4, h5, h6 {
     }
     .navbar-nav>.active>a {
         border-radius: 0;
-        //color: darken(@gray-base, 10%);
-        color: white;
-        text-decoration: underline;
+        color: @theme-primary;
+        //text-decoration: underline;
         background-color: transparent;
     }
     .navbar-nav>.active>a:hover,
     .navbar-nav>.active>a:focus {
-        //color: darken(@gray-base, 10%);
-        color: white;
+        color: @theme-primary;
         text-decoration: underline;
         background-color: transparent;
     }
 }
 
-@media(min-width:768px) {
+//@media(min-width:768px) {
+@media(min-width:1400px) {
     .navbar-custom {
-        background-color: white;
-        padding: 25px 0;
+        background-color: transparent;
+        //This adds a nice effect-> padding: 25px 0;
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
@@ -160,6 +152,7 @@ h1, h2, h3, h4, h5, h6 {
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
             transition: all 0.3s;
+            color: white;
         }
         .navbar-left {
             margin-left: 10px;
@@ -171,13 +164,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Navbar Change on Scroll
-
 @media(min-width:768px) {
     .navbar-custom.affix {
-        background-color: @theme-primary;
-        padding: 10px 0;
+        //background-color: @theme-primary;
+        background-color: white;
         .navbar-brand {
-            font-size: 1.5em;
+            color: black;
         }
     }
 }
@@ -193,11 +185,11 @@ section#home {
 
 header {
     height: auto;
-    background: url('../img/clinicadental.jpg');
+    background: url('../img/portada.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: left center;
-    background-size: 1200px 900px;    
+    background-position: left;
+    background-size: 1400px 800px;
     //.background-cover;
     text-align: left;
     color: black;

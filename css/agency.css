@@ -149,21 +149,15 @@ fieldset[disabled] .btn-xl.active {
   background-color: white;
 }
 .navbar-custom {
+  padding: 15px 0;
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
   color: black;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, cursive;
 }
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus,
-.navbar-custom .navbar-brand:active,
-.navbar-custom .navbar-brand.active {
-  color: #000000;
-  text-decoration: underline;
-}
 .navbar-custom .navbar-collapse {
-  border-color: rgba(255, 255, 255, 0.02);
+  border-color: white;
 }
 .navbar-custom .navbar-toggle {
   background-color: #74a4a6;
@@ -190,20 +184,18 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
-  color: white;
-  text-decoration: underline;
+  color: #74a4a6;
   background-color: transparent;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
-  color: white;
+  color: #74a4a6;
   text-decoration: underline;
   background-color: transparent;
 }
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
   .navbar-custom {
-    background-color: white;
-    padding: 25px 0;
+    background-color: transparent;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
@@ -214,6 +206,7 @@ fieldset[disabled] .btn-xl.active {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+    color: white;
   }
   .navbar-custom .navbar-left {
     margin-left: 10px;
@@ -224,11 +217,10 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #74a4a6;
-    padding: 10px 0;
+    background-color: white;
   }
   .navbar-custom.affix .navbar-brand {
-    font-size: 1.5em;
+    color: black;
   }
 }
 section#home {
@@ -241,11 +233,11 @@ section#home .section-heading {
 }
 header {
   height: auto;
-  background: url('../img/clinicadental.jpg');
+  background: url('../img/portada.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: left center;
-  background-size: 1200px 900px;
+  background-position: left;
+  background-size: 1400px 800px;
   text-align: left;
   color: black;
 }
