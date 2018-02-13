@@ -84,6 +84,27 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px 40px;
 }
 
+.intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    .intro-lead-in {
+        .serif-font;
+        font-style: italic;
+        font-size: 18px;
+        line-height: 18px;
+        margin-bottom: 25px;
+    }
+}
+
+.intro-heading {
+    .heading-font;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
 // Custom Navigation Bar
 
 .navbar-custom {
@@ -113,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
             a {
                 .heading-font;
                 font-weight: 600;
-                letter-spacing: 1px;
+                letter-spacing: 0px;
                 color: black;
                 &:hover,
                 &:focus {
@@ -125,9 +146,7 @@ h1, h2, h3, h4, h5, h6 {
         }
     }
     .navbar-nav>.active>a {
-        border-radius: 0;
         color: @theme-primary;
-        //text-decoration: underline;
         background-color: transparent;
     }
     .navbar-nav>.active>a:hover,
@@ -148,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
         transition: padding 0.3s;
         border: none;
         .navbar-brand {
-            font-size: 1.5em;
+            font-size: 1.3em;
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
             transition: all 0.3s;
@@ -187,9 +206,10 @@ header {
     height: auto;
     background: url('../img/portada.jpg');
     background-repeat: no-repeat;
+    background-color: white;
     background-attachment: scroll;
     background-position: left;
-    background-size: 1400px 800px;
+    background-size: 1100px 800px;
     //.background-cover;
     text-align: left;
     color: black;
