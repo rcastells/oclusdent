@@ -312,7 +312,7 @@ header .intro-text .intro-heading {
 div .header-text {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
-  margin: 25px;
+  margin-top: 25px;
   font-size: 35px;
   font-color: black;
   text-align: center;
