@@ -46,6 +46,7 @@ a.active {
 
 h1, h2, h3, h4, h5, h6 {
     .heading-font;
+    color: @black-base;
     font-weight: 700;
 }
 
@@ -98,8 +99,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 50px;
     padding-left: 50px;
     .intro-lead-in {
-        .serif-font;
-        font-style: italic;
+        .heading-font;
         font-size: 18px;
         line-height: 18px;
         margin-bottom: 25px;
@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px 0;
     border-color: transparent;
     .navbar-brand {
-        color: black;
+        color: @black-base;
         .script-font;
     }
     .navbar-collapse {
@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
         border-color: @theme-primary;
         .heading-font;
         color: white;
-        font-size: 12px;
+        font-size: 16px;
         &:hover,
         &:focus {
             background-color: @theme-primary;
@@ -142,12 +142,14 @@ h1, h2, h3, h4, h5, h6 {
         li {
             a {
                 .heading-font;
-                font-weight: 600;
+                font-weight: 600px;
                 letter-spacing: 0px;
-                color: black;
+                color: @black-base;
+                font-size: 16px;
+                text-transform: uppercase;
                 &:hover,
                 &:focus {
-                    color: black;
+                    color: @black-base;
                     text-decoration: underline;
                     outline: none;
                 }
@@ -167,11 +169,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dropdown .dropbtn {
-    padding: 14px 0;
+    padding: 13px 0;
     border-color: transparent;
     background-color: transparent;
     .heading-font;
-    font-weight: 600;
+    color: @black-base;
+    font-weight: 600px;
+    text-transform: uppercase;
+    font-size: 16px;
 }
 
 .dropdown-content {
@@ -185,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .dropdown-content a {
     float: none;
-    color: black;
+    color: @black-base;
     padding: 12px 16px;
     text-decoration: none;
     background-color: transparent;
@@ -232,7 +237,7 @@ h1, h2, h3, h4, h5, h6 {
         //background-color: @theme-primary;
         background-color: white;
         .navbar-brand {
-            color: black;
+            color: @black-base;
         }
     }
 }
@@ -242,7 +247,7 @@ section#home {
     background-position: center;
     background-repeat: no-repeat;
     .section-heading {
-        color: black;
+        color: @black-base;
     }
 }
 
@@ -254,22 +259,22 @@ header {
     background-attachment: scroll;
     background-position: left;
     text-align: left;
-    color: black;
+    color: @black-base;
     .intro-text {
         padding-top: 0px;
         padding-bottom: 0px;
         padding-left: 50px;
         .intro-lead-in {
-            .serif-font;
-            font-style: italic;
+            .heading-font;
             font-size: 25px;
             line-height: 18px;
             margin-bottom: 25px;
         }
         .intro-heading {
             .heading-font;
-            font-weight: 200;
-            font-size: 20px;
+            font-style: border-left-width;
+            //font-weight: 436px;
+            font-size: 10px;
             line-height: 70px;
             margin-bottom: 0px;
             padding-bottom: 0px;
@@ -283,14 +288,14 @@ div {
         font-weight: 500;
         margin-top: 25px;
         font-size: 35px;
-        font-color: black;
+        color: @black-base;
         text-align: center;
         }
     .header-lead {
         .heading-font;
         margin: 25px;
         font-size: 25px;
-        font-color: black;
+        color: @black-base;
         text-align: center;
     }
 }
@@ -303,16 +308,19 @@ div {
             padding-bottom: 200px;
             .intro-lead-in {
                 .heading-font;
-                font-size: 25px;
-                line-height: 30px;
+                color: @black-base;
+                font-size: 28px;
+                //line-height: 30px;
                 margin-bottom: 25px;
+                margin-top: 25px;
             }
             .intro-heading {
                 .heading-font;
-                font-weight: 500;
+                color: @black-base;
+                font-weight: bold;
                 font-size: 50px;
                 line-height: 70px;
-                margin-bottom: 0px;
+                //margin-bottom: 0px;
             }
         }
     }
@@ -666,11 +674,11 @@ section {
 
 .carousel-indicators{
     bottom: -30px;
-    border: black;
+    border: @black-base;
 }
 
 .carousel-control{
-    color: @theme-primary;
+    color: @black-base;
     margin-left: -50px;
     margin-right: -50px;
     margin-top: -50px;
@@ -684,7 +692,7 @@ section#contact {
     background-position: center;
     background-repeat: no-repeat;
     .section-heading {
-        color: black;
+        color: @black-base;
     }
 }
 
@@ -710,6 +718,7 @@ footer {
     text-align: center;
     span.copyright {
         line-height: 40px;
+        color: @black-base;
         .heading-font;
         text-transform: none;
     }
@@ -717,6 +726,7 @@ footer {
         margin-bottom: 0;
         line-height: 40px;
         .heading-font;
+        color: @black-base;
         text-transform: none;
     }
 }
@@ -779,7 +789,7 @@ footer {
             height:75px;
             width:1px;
             margin-left:35px;
-            background-color:@gray-darker;
+            background-color: @gray-darker;
             transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             /* IE 9 */

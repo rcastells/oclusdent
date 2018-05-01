@@ -42,7 +42,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #4a4a4a;
   font-weight: 700;
 }
 .section {
@@ -63,7 +64,7 @@ h6 {
   color: white;
   background-color: #74a4a6;
   border-color: #74a4a6;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 500;
 }
 .btn-primary:hover,
@@ -106,7 +107,7 @@ fieldset[disabled] .btn-primary.active {
   color: white;
   background-color: #74a4a6;
   border-color: #74a4a6;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 500;
   border-radius: 3px;
   font-size: 18px;
@@ -152,7 +153,7 @@ fieldset[disabled] .btn-xl.active {
   color: white;
   background-color: #74a4a6;
   border-color: #74a4a6;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 500;
   border-radius: 3px;
   font-size: 14px;
@@ -200,14 +201,13 @@ fieldset[disabled] .btn-sm.active {
   padding-left: 50px;
 }
 .intro-text .intro-lead-in {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 18px;
   margin-bottom: 25px;
 }
 .intro-heading {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 200;
   font-size: 20px;
   line-height: 30px;
@@ -218,7 +218,7 @@ fieldset[disabled] .btn-sm.active {
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
-  color: black;
+  color: #4a4a4a;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 .navbar-custom .navbar-collapse {
@@ -227,23 +227,25 @@ fieldset[disabled] .btn-sm.active {
 .navbar-custom .navbar-toggle {
   background-color: #74a4a6;
   border-color: #74a4a6;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   color: white;
-  font-size: 12px;
+  font-size: 16px;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
   background-color: #74a4a6;
 }
 .navbar-custom .nav li a {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 600px;
   letter-spacing: 0px;
-  color: black;
+  color: #4a4a4a;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: black;
+  color: #4a4a4a;
   text-decoration: underline;
   outline: none;
 }
@@ -258,11 +260,14 @@ fieldset[disabled] .btn-sm.active {
   background-color: transparent;
 }
 .dropdown .dropbtn {
-  padding: 14px 0;
+  padding: 13px 0;
   border-color: transparent;
   background-color: transparent;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #4a4a4a;
+  font-weight: 600px;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 .dropdown-content {
   display: none;
@@ -274,7 +279,7 @@ fieldset[disabled] .btn-sm.active {
 }
 .dropdown-content a {
   float: none;
-  color: black;
+  color: #4a4a4a;
   padding: 12px 16px;
   text-decoration: none;
   background-color: transparent;
@@ -314,7 +319,7 @@ fieldset[disabled] .btn-sm.active {
     background-color: white;
   }
   .navbar-custom.affix .navbar-brand {
-    color: black;
+    color: #4a4a4a;
   }
 }
 section#home {
@@ -323,7 +328,7 @@ section#home {
   background-repeat: no-repeat;
 }
 section#home .section-heading {
-  color: black;
+  color: #4a4a4a;
 }
 header {
   height: auto;
@@ -333,7 +338,7 @@ header {
   background-attachment: scroll;
   background-position: left;
   text-align: left;
-  color: black;
+  color: #4a4a4a;
 }
 header .intro-text {
   padding-top: 0px;
@@ -341,33 +346,32 @@ header .intro-text {
   padding-left: 50px;
 }
 header .intro-text .intro-lead-in {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 25px;
   line-height: 18px;
   margin-bottom: 25px;
 }
 header .intro-text .intro-heading {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  font-size: 20px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: border-left-width;
+  font-size: 10px;
   line-height: 70px;
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
 div .header-text {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 500;
   margin-top: 25px;
   font-size: 35px;
-  font-color: black;
+  color: #4a4a4a;
   text-align: center;
 }
 div .header-lead {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   margin: 25px;
   font-size: 25px;
-  font-color: black;
+  color: #4a4a4a;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -379,17 +383,18 @@ div .header-lead {
     padding-bottom: 200px;
   }
   header .intro-text .intro-lead-in {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 25px;
-    line-height: 30px;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #4a4a4a;
+    font-size: 28px;
     margin-bottom: 25px;
+    margin-top: 25px;
   }
   header .intro-text .intro-heading {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 500;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #4a4a4a;
+    font-weight: bold;
     font-size: 50px;
     line-height: 70px;
-    margin-bottom: 0px;
   }
 }
 section {
@@ -694,10 +699,10 @@ section h3.section-subheading {
 }
 .carousel-indicators {
   bottom: -30px;
-  border: black;
+  border: #4a4a4a;
 }
 .carousel-control {
-  color: #74a4a6;
+  color: #4a4a4a;
   margin-left: -50px;
   margin-right: -50px;
   margin-top: -50px;
@@ -707,7 +712,7 @@ section#contact {
   background-repeat: no-repeat;
 }
 section#contact .section-heading {
-  color: black;
+  color: #4a4a4a;
 }
 .btn-mobile {
   position: fixed;
@@ -728,13 +733,15 @@ footer {
 }
 footer span.copyright {
   line-height: 40px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #4a4a4a;
+  font-family: "Open Sans", Arial, sans-serif;
   text-transform: none;
 }
 footer ul.quicklinks {
   margin-bottom: 0;
   line-height: 40px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #4a4a4a;
   text-transform: none;
 }
 .btn:focus,
