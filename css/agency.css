@@ -341,7 +341,7 @@ header {
   background-repeat: no-repeat;
   background-color: white;
   background-attachment: scroll;
-  background-position: left;
+  background-position: top-left;
   text-align: left;
   color: #4a4a4a;
 }
