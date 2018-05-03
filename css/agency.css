@@ -8,7 +8,9 @@ body {
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .text-muted {
-  color: #777777;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
 }
 .text-primary {
   color: #74a4a6;
@@ -295,7 +297,7 @@ fieldset[disabled] .btn-sm.active {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1470px) {
   .navbar-custom {
     background-color: transparent;
     -webkit-transition: padding 0.3s;
@@ -422,7 +424,8 @@ section h3.section-subheading {
   }
 }
 .service-heading {
-  margin: 15px 0;
+  margin: 0px 0;
+  font-size: 16px;
   text-transform: none;
 }
 #portfolio .portfolio-item {
@@ -697,14 +700,13 @@ section h3.section-subheading {
 }
 .multi-item-carousel .carousel-control.left,
 .multi-item-carousel .carousel-control.right {
-  margin: -100px;
-  margin-bottom: 0px;
-}
-.carousel-control {
   color: black;
   margin-left: -50px;
   margin-right: -50px;
-  margin-top: -50px;
+  margin-top: 50px;
+}
+.green {
+  color: #2C6F73;
 }
 section#contact {
   background-position: center;
