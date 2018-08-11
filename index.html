@@ -22,6 +22,7 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 
     <!-- Theme CSS -->
     <link href="css/agency.min.css" rel="stylesheet">
@@ -47,10 +48,7 @@
                 </button>
 
                 <a class="navbar-brand page-scroll" href="#page-top" style="margin-top: -10px; margin-left: -40px;"><img src="img/logos/logo_mini.png" href="#page-top" style="height: 40px;">
-                <a href="#" style="margin-left:0px;" class="navbar-brand hidden-xs hidden-sm"><span class="fa fa-phone hidden-sm hidden-xs"></span> 93 447 05 30</a></a>
-                <!--<a style="margin-left:10px; margin-top: 10px;" href="tel:93 447 05 30" class="btn btn-primary btn-md hidden-lg hidden-md hidden-sm"><span class="fa fa-phone"></span> 93 447 05 30</a>-->
-                <!--<a class="navbar-brand page-scroll" href="#page-top">Oclusdent
-                </a>-->
+                <a href="#page-top" style="margin-left:0px;" class="navbar-brand page-scroll hidden-xs hidden-sm"><span class="fa fa-phone hidden-sm hidden-xs"></span> 93 447 05 30</a></a>
             </div>
 
 
@@ -82,7 +80,7 @@
                             </button>
                             <div class="dropdown-content">
                                 <a class="dropdown-item page-scroll" href="#about">La Clínica</a>
-                                <a class="dropdown-item page-scroll" href="#about">Historia</a>
+                                <a class="dropdown-item page-scroll" href="#story">Historia</a>
                                 <a class="dropdown-item page-scroll" href="#team">Equipo</a>
                             </div>
                         </div> 
@@ -242,14 +240,14 @@
                         <span class="fa-stack fa-lg">
                         <i class="glyphicon glyphicon-envelope green fa-stack-1x"></i>
                         </span>
-                        <a class="text-muted">info@oclusdent.com</a>
+                        <a href="mailto:info@oclusdent.com" class="text-muted">info@oclusdent.com</a>
                     </div>
                 </div>
             </div>
             <div class="row col-sm col-md text-center hidden-lg hidden-xs" style="margin-top: 40px;">
                 <div class="col-sm-3">
                     <span class="fa-stack fa-lg">
-                    <i class="fa fa-map-marker green fa-stack-1x"></i></a>
+                    <i class="fa fa-map-marker green fa-stack-1x"></i>
                     </span>
                     <p class="text-muted">Passatge de Xile, nº11<br>Barcelona</p>
                 </div>
@@ -269,7 +267,7 @@
                     <span class="fa-stack fa-lg">
                     <i class="fa fa-envelope-o green fa-stack-1x"></i></a>
                     </span>
-                    <p class="text-muted">info@oclusdent.com</p>
+                    <p class="text-muted"><a class="text-muted" href="mailto:info@oclusdent.com">info@oclusdent.com</a></p>
                 </div>
             </div>
             <div class="row col-xs hidden-lg hidden-sm hidden-md" style="margin-top: 40px;">
@@ -289,59 +287,129 @@
                     <span class="fa-stack fa-lg">       
                     <i class="fa fa-phone green fa-stack-1x"></i>
                     </span>
-                    <a class="text-muted">93 447 05 30</a>
+                    <a href="tel:+34934470530" class="text-muted">93 447 05 30</a>
                 </div>
                 <div class="col-sm-3">
                     <span class="fa-stack fa-lg">
                     <i class="fa fa-envelope-o green fa-stack-1x"></i></a>
                     </span>
-                    <a class="text-muted">info@oclusdent.com</a>
+                    <a href="mailto:info@oclusdent.com" class="text-muted">info@oclusdent.com</a>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="about" class="section bg-light-gray">
-    <div class="container gallery-container">
-        <div class="tz-gallery">
-            <div class="row">
-                <div class="col-sm-12 col-md-4">
-                    <a class="lightbox" href="../images/bridge.jpg">
-                        <img src="../images/bridge.jpg" alt="Bridge">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="../images/park.jpg">
-                        <img src="../images/park.jpg" alt="Park">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="../images/tunnel.jpg">
-                        <img src="../images/tunnel.jpg" alt="Tunnel">
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-8">
-                    <a class="lightbox" href="../images/traffic.jpg">
-                        <img src="../images/traffic.jpg" alt="Traffic">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="../images/coast.jpg">
-                        <img src="../images/coast.jpg" alt="Coast">
-                    </a>
-                </div> 
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="../images/rails.jpg">
-                        <img src="../images/rails.jpg" alt="Rails">
-                    </a>
+    <div class="container gallery-container"> 
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">La clínica</h2>
+                    <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
                 </div>
             </div>
+            <div class="tz-gallery hidden-xs">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="img/clinica/DSC_0017.jpg">
+                    <img src="img/clinica/DSC_0017.jpg" alt="Bridge">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="img/clinica/DSC_0018.jpg">
+                    <img src="img/clinica/DSC_0018.jpg" alt="Park">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="img/clinica/DSC_0021.jpg">
+                    <img src="img/clinica/DSC_0021.jpg" alt="Tunnel">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <a class="lightbox" href="img/clinica/DSC_0024.jpg">
+                    <img src="img/clinica/DSC_0024.jpg" alt="Traffic">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="img/clinica/DSC_0025.jpg">
+                    <img src="img/clinica/DSC_0025.jpg" alt="Coast">
+                </a>
+            </div> 
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="img/clinica/DSC_0822.jpg">
+                    <img src="img/clinica/DSC_0822.jpg" alt="Rails">
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+            <!-- Team phone format with carousel -->
+        <div id="teamCarouselPhone" class="carousel slide hidden-lg hidden-sm hidden-md" data-ride="carousel">
+
+        <div class="row">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="team-member item active">
+                <img src="img/team/Jordi_Alarcon.png" class="img-responsive img-circle" alt="">
+                <h4>Jordi Alarcón</h4>
+                <p class="text-muted">Doctor Cirujano y estecién</p>
+            </div>
+            <div class="team-member item">
+                <img src="img/team/Eduardo_Alarcon.png" class="img-responsive img-circle" alt="">
+                <h4>Eduardo Pérez Alarcón</h4>
+                <p class="text-muted">Doctor Cirujano y estecién</p>
+            </div>
+            <div class="team-member item">
+                <img src="img/team/Neus_Bartran.png" class="img-responsive img-circle" alt="">
+                <h4>Neus Bartrán</h4>
+                <p class="text-muted">Administración</p>
+            </div>
+            <div class="team-member item">
+                <img src="img/team/Joaquim_Alarcon.png" class="img-responsive img-circle" alt="">
+                <h4>Joaquim Alarcón</h4>
+                <p class="text-muted">Finanzas</p>
+            </div>
+            <div class="team-member item">
+                <img src="img/team/Auxiliar1.png" class="img-responsive img-circle" alt="">
+                <h4>Auxiliar1</h4>
+                <p class="text-muted">Auxiliar1</p>
+            </div>
+            <div class="team-member item">
+                <img src="img/team/Auxiliar2.png" class="img-responsive img-circle" alt="">
+                <h4>Auxiliar2</h4>
+                <p class="text-muted">Auxiliar2</p>
+            </div>
+            <div class="team-member item">
+                <img src="img/team/Auxiliar3.png" class="img-responsive img-circle" alt="">
+                <h4>Auxiliar3</h4>
+                <p class="text-muted">Auxiliar3</p>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" style="background-image: none;" href="#teamCarouselPhone" data-slide="prev">
+            <span class="glyphicon glyphicon-menu-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" style="background-image: none;" href="#teamCarouselPhone" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        </div>
+    </div>
+
+
+
         </div>
     </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="story" class="section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -1035,6 +1103,10 @@
     });
     </script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
 
 </body>
 
