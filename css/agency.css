@@ -362,17 +362,19 @@ header .intro-text .intro-heading {
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
-div .header-text {
+.header-text {
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 500;
-  margin-top: 25px;
-  font-size: 35px;
+  font-style: border-left-width;
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 45px;
   color: #4a4a4a;
-  text-align: center;
 }
-div .header-lead {
+.header-lead {
   font-family: "Open Sans", Arial, sans-serif;
-  margin: 25px;
+  font-style: border-left-width;
+  font-weight: 500;
+  margin-top: 5px;
   font-size: 25px;
   color: #4a4a4a;
   text-align: center;
@@ -863,7 +865,7 @@ footer ul.quicklinks {
 }
 @media (max-width: 768px) {
   body {
-    padding: 0;
+    padding: 2px;
   }
 }
 ::-moz-selection {

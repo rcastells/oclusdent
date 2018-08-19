@@ -285,22 +285,23 @@ header {
     }
 }
 
-div {
-    .header-text {
-        .heading-font;
-        font-weight: 500;
-        margin-top: 25px;
-        font-size: 35px;
-        color: @black-base;
-        text-align: center;
-        }
-    .header-lead {
-        .heading-font;
-        margin: 25px;
-        font-size: 25px;
-        color: @black-base;
-        text-align: center;
-    }
+.header-text {
+    .heading-font;
+    font-style: border-left-width;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 45px;
+    color: @black-base;
+    //text-align: center;
+}
+.header-lead {
+    .heading-font;
+    font-style: border-left-width;
+    font-weight: 500;
+    margin-top: 5px;
+    font-size: 25px;
+    color: @black-base;
+    text-align: center;
 }
 
 @media(min-width:768px) {
@@ -866,7 +867,7 @@ footer {
 
 @media(max-width: 768px) {
     body {
-        padding: 0;
+        padding: 2px;
     }
 }
 
