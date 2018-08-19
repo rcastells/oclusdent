@@ -224,12 +224,6 @@ fieldset[disabled] .btn-sm.active {
 .navbar-custom {
   padding: 5px 0;
   border-color: transparent;
-  position: fixed;
-  /* Make it stick/fixed */
-  top: 0;
-  /* Stay on top */
-  width: 100%;
-  /* Full width */
   transition: top 0.3s;
   /* Transition effect when sliding down (and up) */
 }
@@ -707,7 +701,7 @@ section#home .section-heading {
 }
 .carousel-control.left,
 .carousel-control.right {
-  color: #74a4a6;
+  color: white;
   text-align: center;
   background-image: none;
 }
