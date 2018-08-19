@@ -230,6 +230,10 @@ fieldset[disabled] .btn-sm.active {
 .navbar-custom .navbar-brand {
   color: #4a4a4a;
 }
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: white;
+}
 .navbar-custom .navbar-collapse {
   border-color: white;
 }
