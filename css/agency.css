@@ -222,12 +222,19 @@ fieldset[disabled] .btn-sm.active {
   margin-bottom: 25px;
 }
 .navbar-custom {
-  padding: 15px 0;
+  padding: 5px 0;
   border-color: transparent;
+  position: fixed;
+  /* Make it stick/fixed */
+  top: 0;
+  /* Stay on top */
+  width: 100%;
+  /* Full width */
+  transition: top 0.3s;
+  /* Transition effect when sliding down (and up) */
 }
 .navbar-custom .navbar-brand {
   color: #4a4a4a;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 .navbar-custom .navbar-collapse {
   border-color: white;
@@ -268,6 +275,36 @@ fieldset[disabled] .btn-sm.active {
   text-decoration: underline;
   background-color: transparent;
 }
+@media (min-width: 1470px) {
+  .navbar-custom {
+    background-color: transparent;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+  }
+  .navbar-custom .navbar-brand {
+    font-size: 1.3em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color: white;
+  }
+  .navbar-custom .navbar-left {
+    margin-left: 10px;
+  }
+  .navbar-custom .navbar-nav > .active > a {
+    border-radius: 3px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-custom.affix {
+    background-color: white;
+  }
+  .navbar-custom.affix .navbar-brand {
+    color: #4a4a4a;
+  }
+}
 .dropdown .dropbtn {
   padding: 13px 0;
   border-color: transparent;
@@ -301,44 +338,6 @@ fieldset[disabled] .btn-sm.active {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-@media (min-width: 1470px) {
-  .navbar-custom {
-    background-color: transparent;
-    -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
-    transition: padding 0.3s;
-    border: none;
-  }
-  .navbar-custom .navbar-brand {
-    font-size: 1.3em;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    color: white;
-  }
-  .navbar-custom .navbar-left {
-    margin-left: 10px;
-  }
-  .navbar-custom .navbar-nav > .active > a {
-    border-radius: 3px;
-  }
-}
-@media (min-width: 768px) {
-  .navbar-custom.affix {
-    background-color: white;
-  }
-  .navbar-custom.affix .navbar-brand {
-    color: #4a4a4a;
-  }
-}
-section#home {
-  background-image: url('../img/map-image.png');
-  background-position: center;
-  background-repeat: no-repeat;
-}
-section#home .section-heading {
-  color: #4a4a4a;
-}
 header {
   height: auto;
   background: url('../img/portada.jpg');
@@ -359,6 +358,7 @@ header .intro-text .intro-lead-in {
   font-size: 25px;
   line-height: 18px;
   margin-bottom: 25px;
+  line-height: 1.2em;
 }
 header .intro-text .intro-heading {
   font-family: "Open Sans", Arial, sans-serif;
@@ -426,6 +426,9 @@ section h3.section-subheading {
   section {
     padding: 150px 0;
   }
+}
+section#home .section-heading {
+  color: #4a4a4a;
 }
 .service-heading {
   margin: 0px 0;
@@ -702,12 +705,11 @@ section h3.section-subheading {
     transform: none!important;
   }
 }
-.multi-item-carousel .carousel-control.left,
-.multi-item-carousel .carousel-control.right {
-  color: black;
-  margin-left: -50px;
-  margin-right: -50px;
-  margin-top: 50px;
+.carousel-control.left,
+.carousel-control.right {
+  color: #74a4a6;
+  text-align: center;
+  background-image: none;
 }
 .green {
   color: #2C6F73;
@@ -718,15 +720,6 @@ section#contact {
 }
 section#contact .section-heading {
   color: #4a4a4a;
-}
-.btn-mobile {
-  position: fixed;
-  width: 60%;
-  bottom: 10px;
-  margin-left: 20%;
-  margin-right: 20%;
-  display: block;
-  z-index: 1000;
 }
 .vertical-align {
   display: flex;

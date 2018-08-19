@@ -127,11 +127,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-custom {
     //background-color: @theme-primary;
-    padding: 15px 0;
+    padding: 5px 0;
     border-color: transparent;
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
     .navbar-brand {
         color: @black-base;
-        .script-font;
+        //.script-font;
     }
     .navbar-collapse {
         border-color: white;
@@ -178,6 +182,43 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+// When lower than 1470 adding background to see menu correctly
+@media(min-width:1470px) {
+    .navbar-custom {
+        background-color: transparent;
+        //This adds a nice effect-> padding: 25px 0;
+        -webkit-transition: padding 0.3s;
+        -moz-transition: padding 0.3s;
+        transition: padding 0.3s;
+        border: none;
+        .navbar-brand {
+            font-size: 1.3em;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            color: white;
+        }
+        .navbar-left {
+            margin-left: 10px;
+        }
+        .navbar-nav>.active>a {
+            border-radius: 3px;
+        }
+    }
+}
+
+// Navbar Change on Scroll Down
+@media(min-width:768px) {
+    .navbar-custom.affix {
+        //background-color: @theme-primary;
+        background-color: white;
+        .navbar-brand {
+            color: @black-base;
+        }
+    }
+}
+
+// Dropdown is used to display a second level of a menu
 .dropdown .dropbtn {
     padding: 13px 0;
     border-color: transparent;
@@ -216,51 +257,6 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 
-//@media(min-width:768px) {
-@media(min-width:1470px) {
-    .navbar-custom {
-        background-color: transparent;
-        //This adds a nice effect-> padding: 25px 0;
-        -webkit-transition: padding 0.3s;
-        -moz-transition: padding 0.3s;
-        transition: padding 0.3s;
-        border: none;
-        .navbar-brand {
-            font-size: 1.3em;
-            -webkit-transition: all 0.3s;
-            -moz-transition: all 0.3s;
-            transition: all 0.3s;
-            color: white;
-        }
-        .navbar-left {
-            margin-left: 10px;
-        }
-        .navbar-nav>.active>a {
-            border-radius: 3px;
-        }
-    }
-}
-
-// Navbar Change on Scroll
-@media(min-width:768px) {
-    .navbar-custom.affix {
-        //background-color: @theme-primary;
-        background-color: white;
-        .navbar-brand {
-            color: @black-base;
-        }
-    }
-}
-
-section#home {
-    background-image: url('../img/map-image.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    .section-heading {
-        color: @black-base;
-    }
-}
-
 header {
     height: auto;
     background: url('../img/portada.jpg');
@@ -279,6 +275,7 @@ header {
             font-size: 25px;
             line-height: 18px;
             margin-bottom: 25px;
+            line-height: 1.2em;
         }
         .intro-heading {
             .heading-font;
@@ -357,6 +354,14 @@ section {
 @media(min-width:768px) {
     section {
         padding: 150px 0;
+    }
+}
+
+// Home Section
+
+section#home {
+    .section-heading {
+        color: @black-base;
     }
 }
 
@@ -674,19 +679,15 @@ section {
       }
     }
   }
-  .carousel-control{
-    &.left, &.right{
-      color: black;
-      text-align: center;
-    }
-  }
 }
 
-carousel-control{
+.carousel-control{
     &.left, &.right{
-      color: black;
+      color: @theme-primary;
       text-align: center;
+      background-image: none;
     }
+}
 
 // Contact Section
 
@@ -695,23 +696,11 @@ carousel-control{
 }
 
 section#contact {
-    //background-color: @gray-darker;
-    //background-image: url('../img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
     .section-heading {
         color: @black-base;
     }
-}
-
-.btn-mobile {
-    position: fixed; 
-    width: 60%; 
-    bottom: 10px; 
-    margin-left: 20%;
-    margin-right: 20%; 
-    display: block;
-    z-index: 1000;
 }
 
 .vertical-align {
