@@ -232,7 +232,7 @@ fieldset[disabled] .btn-sm.active {
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus {
-  color: white;
+  color: black;
 }
 .navbar-custom .navbar-collapse {
   border-color: white;
@@ -273,7 +273,7 @@ fieldset[disabled] .btn-sm.active {
   text-decoration: underline;
   background-color: transparent;
 }
-@media (min-width: 1470px) {
+@media (min-width: 2800px) {
   .navbar-custom {
     background-color: transparent;
     -webkit-transition: padding 0.3s;
@@ -338,7 +338,7 @@ fieldset[disabled] .btn-sm.active {
 }
 header {
   height: auto;
-  background: url('../img/portada.jpg');
+  background: url('../img/portada_oclusdent.jpeg');
   background-repeat: no-repeat;
   background-color: white;
   background-attachment: scroll;
