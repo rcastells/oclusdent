@@ -203,26 +203,8 @@ fieldset[disabled] .btn-sm.active {
   color: #2C6F73;
   background-color: white;
 }
-.intro-text {
-  padding-top: 100px;
-  padding-bottom: 50px;
-  padding-left: 50px;
-}
-.intro-text .intro-lead-in {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 18px;
-  margin-bottom: 25px;
-}
-.intro-heading {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 200;
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 25px;
-}
 .navbar-custom {
-  padding: 5px 0;
+  padding: 5px 0px;
   border-color: transparent;
   transition: top 0.3s;
   /* Transition effect when sliding down (and up) */
@@ -282,7 +264,7 @@ fieldset[disabled] .btn-sm.active {
     border: none;
   }
   .navbar-custom .navbar-brand {
-    font-size: 1.3em;
+    font-size: 20px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -304,7 +286,7 @@ fieldset[disabled] .btn-sm.active {
   }
 }
 .dropdown .dropbtn {
-  padding: 13px 0;
+  padding: 13px 10px;
   border-color: transparent;
   background-color: transparent;
   font-family: "Open Sans", Arial, sans-serif;
@@ -350,38 +332,24 @@ header .intro-text {
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 50px;
-}
-header .intro-text .intro-lead-in {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 25px;
-  line-height: 18px;
-  margin-bottom: 25px;
-  line-height: 1.2em;
+  padding-right: 50px;
 }
 header .intro-text .intro-heading {
   font-family: "Open Sans", Arial, sans-serif;
+  font-weight: bold;
   font-style: border-left-width;
-  font-size: 10px;
-  line-height: 70px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  font-size: 50px;
 }
-.header-text {
+header .intro-text .intro-lead-in {
   font-family: "Open Sans", Arial, sans-serif;
-  font-style: border-left-width;
-  font-weight: 600;
-  margin-top: 10px;
-  font-size: 45px;
-  color: #4a4a4a;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 25px;
 }
-.header-lead {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-style: border-left-width;
-  font-weight: 500;
-  margin-top: 5px;
-  font-size: 25px;
-  color: #4a4a4a;
-  text-align: center;
+header .intro-text .intro-slogan {
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   header {
@@ -391,20 +359,39 @@ header .intro-text .intro-heading {
     padding-top: 300px;
     padding-bottom: 200px;
   }
-  header .intro-text .intro-lead-in {
-    font-family: "Open Sans", Arial, sans-serif;
-    color: #4a4a4a;
-    font-size: 28px;
-    margin-bottom: 25px;
-    margin-top: 25px;
+}
+.header-top {
+  width: 50%;
+}
+@media (max-width: 450px) {
+  .header-top {
+    width: 80%;
   }
-  header .intro-text .intro-heading {
-    font-family: "Open Sans", Arial, sans-serif;
-    color: #4a4a4a;
-    font-weight: bold;
-    font-size: 50px;
-    line-height: 70px;
-  }
+}
+.header-text {
+  margin: auto;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #4a4a4a;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+.header-lead {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #4a4a4a;
+  font-style: border-left-width;
+  font-weight: 500;
+  font-size: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+.header-slogan {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  padding-left: 20px;
+  margin-bottom: 10px;
 }
 section {
   padding: 100px 0;

@@ -103,30 +103,9 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-.intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    .intro-lead-in {
-        .heading-font;
-        font-size: 18px;
-        line-height: 18px;
-        margin-bottom: 25px;
-    }
-}
-
-.intro-heading {
-    .heading-font;
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 25px;
-}
-
 // Custom Navigation Bar
- 
 .navbar-custom {
-    padding: 5px 0;
+    padding: 5px 0px;
     border-color: transparent;
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
     .navbar-brand {
@@ -192,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
         transition: padding 0.3s;
         border: none;
         .navbar-brand {
-            font-size: 1.3em;
+            font-size: 20px;
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
             transition: all 0.3s;
@@ -220,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // Dropdown is used to display a second level of a menu
 .dropdown .dropbtn {
-    padding: 13px 0;
+    padding: 13px 10px;
     border-color: transparent;
     background-color: transparent;
     .heading-font;
@@ -270,42 +249,25 @@ header {
         padding-top: 0px;
         padding-bottom: 0px;
         padding-left: 50px;
-        .intro-lead-in {
-            .heading-font;
-            font-size: 25px;
-            line-height: 18px;
-            margin-bottom: 25px;
-            line-height: 1.2em;
-        }
+        padding-right: 50px;
         .intro-heading {
             .heading-font;
+            font-weight: bold;
             font-style: border-left-width;
-            //font-weight: 436px;
-            font-size: 10px;
-            line-height: 70px;
-            margin-bottom: 0px;
-            padding-bottom: 0px;
+            font-size: 50px;
+        }
+        .intro-lead-in {
+            .heading-font;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+        .intro-slogan {
+            .body-font;
+            font-size: 30px;
+            margin-bottom: 30px;
         }
     }
-}
-
-.header-text {
-    .heading-font;
-    font-style: border-left-width;
-    font-weight: 600;
-    margin-top: 10px;
-    font-size: 45px;
-    color: @black-base;
-    //text-align: center;
-}
-.header-lead {
-    .heading-font;
-    font-style: border-left-width;
-    font-weight: 500;
-    margin-top: 5px;
-    font-size: 25px;
-    color: @black-base;
-    text-align: center;
 }
 
 @media(min-width:768px) {
@@ -314,23 +276,44 @@ header {
         .intro-text {
             padding-top: 300px;
             padding-bottom: 200px;
-            .intro-lead-in {
-                .heading-font;
-                color: @black-base;
-                font-size: 28px;
-                margin-bottom: 25px;
-                margin-top: 25px;
-            }
-            .intro-heading {
-                .heading-font;
-                color: @black-base;
-                font-weight: bold;
-                font-size: 50px;
-                line-height: 70px;
-                //margin-bottom: 0px;
-            }
         }
     }
+}
+
+.header-top {
+    width: 50%;
+}
+
+@media(max-width:450px) {
+    .header-top {
+        width: 80%;
+    }
+}
+
+.header-text {
+    margin: auto;
+    .heading-font;
+    color: @black-base;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.header-lead {
+    .heading-font;
+    color: @black-base;
+    font-style: border-left-width;
+    font-weight: 500;
+    font-size: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.header-slogan {
+    .heading-font;
+    font-size: 25px;
+    font-style: italic;
+    padding-left: 20px;
+    margin-bottom: 10px;
 }
 
 // Global Section Styles
