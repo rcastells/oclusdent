@@ -110,10 +110,9 @@ h1, h2, h3, h4, h5, h6 {
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
     .navbar-brand {
         color: @black-base;
-        //.script-font;
         &:hover,
         &:focus {
-            color: black;
+            color: @black-base;
         }
     }
     .navbar-collapse {
@@ -237,13 +236,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    height: auto;
-    background: url('../img/portada_oclusdent.jpeg');
+    //height: auto;
+    background: url('../img/portada_oclusdent_phone.jpeg');
     background-repeat: no-repeat;
     background-color: white;
     background-attachment: scroll;
-    background-position: top-left;
+    background-position: center;
     text-align: left;
+    min-height: 200px;
     color: @black-base;
     .intro-text {
         padding-top: 0px;
@@ -270,11 +270,23 @@ header {
     }
 }
 
-@media(min-width:768px) {
+@media(min-width:680px) {
     header {
-        min-height: 600px;
+        background: url('../img/portada_oclusdent_tablet.jpeg');
+        background-repeat: no-repeat;
+        background-position: top-left;
+        min-height: 400px;
+    }
+}
+
+@media(min-width:1000px) {
+    header {
+        background: url('../img/portada_oclusdent_big.jpeg');
+        background-repeat: no-repeat;
+        background-position: top-left;
+        min-height: 550px;
         .intro-text {
-            padding-top: 300px;
+            padding-top: 250px;
             padding-bottom: 200px;
         }
     }
@@ -689,7 +701,7 @@ section#contact {
 
 .vertical-align {
     display: flex;
-    align-items: center;
+    align-items: top;
 }
 
 // Footer
@@ -800,7 +812,6 @@ footer {
 // Gallery section
 
 .tz-gallery {
-    padding: 40px;
 }
 
 /* Override bootstrap column paddings */
@@ -818,8 +829,8 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -13px;
-    margin-left: -13px;
+    margin-top: 0px;
+    margin-left: 0px;
     opacity: 0;
     color: #fff;
     font-size: 26px;
