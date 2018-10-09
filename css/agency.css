@@ -338,11 +338,11 @@ header .intro-text .intro-heading {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: bold;
   font-style: border-left-width;
-  font-size: 50px;
+  font-size: 60px;
 }
 header .intro-text .intro-lead-in {
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   margin-bottom: 25px;
 }
@@ -356,15 +356,17 @@ header .intro-text .intro-slogan {
     background: url('../img/portada_oclusdent_tablet.jpeg');
     background-repeat: no-repeat;
     background-position: top-left;
-    min-height: 400px;
+    min-height: 550px;
+    margin-top: 50px;
   }
 }
 @media (min-width: 1000px) {
   header {
-    background: url('../img/portada_oclusdent_big.jpeg');
+    background: url('../img/portada_oclusdent.jpeg');
     background-repeat: no-repeat;
     background-position: top-left;
-    min-height: 550px;
+    min-height: 850px;
+    margin-top: 50px;
   }
   header .intro-text {
     padding-top: 250px;
@@ -380,17 +382,14 @@ header .intro-text .intro-slogan {
   }
 }
 .header-text {
-  margin: auto;
   font-family: "Open Sans", Arial, sans-serif;
-  color: #4a4a4a;
   font-size: 50px;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 40px;
   padding-left: 20px;
 }
 .header-lead {
   font-family: "Open Sans", Arial, sans-serif;
-  color: #4a4a4a;
   font-style: border-left-width;
   font-weight: 500;
   font-size: 30px;
@@ -400,7 +399,6 @@ header .intro-text .intro-slogan {
 .header-slogan {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 25px;
-  font-style: italic;
   padding-left: 20px;
   margin-bottom: 10px;
 }
