@@ -103,6 +103,12 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+// To make all content centered
+.navbar-fixed-top {
+  max-width: 1440px;
+  margin: auto;
+}
+
 // Custom Navigation Bar
 .navbar-custom {
     padding: 5px 0px;
@@ -186,17 +192,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-// Navbar Change on Scroll Down
-@media(min-width:768px) {
-    .navbar-custom.affix {
-        //background-color: @theme-primary;
-        background-color: white;
-        .navbar-brand {
-            color: @black-base;
-        }
-    }
-}
-
 // Dropdown is used to display a second level of a menu
 .dropdown .dropbtn {
     padding: 13px 10px;
@@ -240,53 +235,87 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1440px;
   margin: auto;
 }
-.oclusdent-header{
-  background: url('../img/portada_oclusdent_orig.jpeg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: white;
-  height: 100vh;
-
-}
 
 .oclusdent-header-tablet{
-  background: url('../img/portada_oclusdent_tablet.jpeg');
-  background-repeat: no-repeat;
-  background-color: white;
-  height: 500px;
+    background: url('../img/portada_oclusdent_phone.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    min-height: 300px;
+    margin-top: 20px;
 }
 
-.navbar-fixed-top {
-  max-width: 1440px;
-  margin: auto;
+@media(min-width:450px){
+  .oclusdent-header-tablet{
+      background: url('../img/portada_oclusdent_tablet.jpeg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: white;
+      min-height: 500px;
+  }
 }
 
-.bg-light-gray{
-  background-color: rgba(200,220,220,0.3);
+.oclusdent-header{
+    background: url('../img/portada_oclusdent_orig.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    height: 100vh;
+    min-height: 850px;
 }
 
 header {
   color: @black-base;
   .intro-text {
       padding: 10px 50px;
+      margin-top: 10px;
       .intro-heading {
           .heading-font;
           font-weight: 600;
-          font-size: 50px;
+          font-size: 30px;
       }
       .intro-heading-color {
         .heading-font;
         font-weight: 600;
-        font-size: 50px;
+        font-size: 40px;
         color: #2c6f73;
+        margin-top: 0px;
       }
       .intro-lead-in {
         .heading-font;
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 300;
-        margin-top: 15px;
-        margin-bottom: 30px;
+        margin-top: 5px;
+        margin-bottom: 20px;
       }
+  }
+}
+
+@media(min-width: 500px){
+  header {
+    color: @black-base;
+    .intro-text {
+        padding-left: 50px;
+        margin-top: 30px;
+        .intro-heading {
+            .heading-font;
+            font-weight: 600;
+            font-size: 40px;
+        }
+        .intro-heading-color {
+          .heading-font;
+          font-weight: 600;
+          font-size: 40px;
+          color: #2c6f73;
+        }
+        .intro-lead-in {
+          .heading-font;
+          font-size: 30px;
+          font-weight: 300;
+          margin-top: 0px;
+          margin-bottom: 20px;
+        }
+    }
   }
 }
 
@@ -294,7 +323,7 @@ header {
   header {
     .intro-text {
       padding-left: 50px;
-      padding-top: 250px;
+      padding-top: 300px;
       .intro-heading {
           font-weight: 600;
           font-size: 50px;
@@ -346,8 +375,12 @@ header {
     margin-bottom: 10px;
 }
 
-// Global Section Styles
+// Overwrite bg-light-gray
+.bg-light-gray{
+  background-color: rgba(200,220,220,0.3);
+}
 
+// Global Section Styles
 section {
     padding: 100px 0;
     h2.section-heading {

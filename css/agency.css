@@ -203,6 +203,10 @@ fieldset[disabled] .btn-sm.active {
   color: #2C6F73;
   background-color: white;
 }
+.navbar-fixed-top {
+  max-width: 1440px;
+  margin: auto;
+}
 .navbar-custom {
   padding: 5px 0px;
   background-color: white;
@@ -278,14 +282,6 @@ fieldset[disabled] .btn-sm.active {
     border-radius: 3px;
   }
 }
-@media (min-width: 768px) {
-  .navbar-custom.affix {
-    background-color: white;
-  }
-  .navbar-custom.affix .navbar-brand {
-    color: #4a4a4a;
-  }
-}
 .dropdown .dropbtn {
   padding: 13px 10px;
   border-color: transparent;
@@ -323,54 +319,88 @@ fieldset[disabled] .btn-sm.active {
   max-width: 1440px;
   margin: auto;
 }
+.oclusdent-header-tablet {
+  background: url('../img/portada_oclusdent_phone.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  min-height: 300px;
+  margin-top: 20px;
+}
+@media (min-width: 450px) {
+  .oclusdent-header-tablet {
+    background: url('../img/portada_oclusdent_tablet.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    min-height: 500px;
+  }
+}
 .oclusdent-header {
   background: url('../img/portada_oclusdent_orig.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-color: white;
   height: 100vh;
-}
-.oclusdent-header-tablet {
-  background: url('../img/portada_oclusdent_tablet.jpeg');
-  background-repeat: no-repeat;
-  background-color: white;
-  height: 500px;
-}
-.navbar-fixed-top {
-  max-width: 1440px;
-  margin: auto;
-}
-.bg-light-gray {
-  background-color: rgba(200, 220, 220, 0.3);
+  min-height: 850px;
 }
 header {
   color: #4a4a4a;
 }
 header .intro-text {
   padding: 10px 50px;
+  margin-top: 10px;
 }
 header .intro-text .intro-heading {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 30px;
 }
 header .intro-text .intro-heading-color {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 40px;
   color: #2c6f73;
+  margin-top: 0px;
 }
 header .intro-text .intro-lead-in {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 300;
-  margin-top: 15px;
-  margin-bottom: 30px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+@media (min-width: 500px) {
+  header {
+    color: #4a4a4a;
+  }
+  header .intro-text {
+    padding-left: 50px;
+    margin-top: 30px;
+  }
+  header .intro-text .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+  }
+  header .intro-text .intro-heading-color {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #2c6f73;
+  }
+  header .intro-text .intro-lead-in {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
 }
 @media (min-width: 990px) {
   header .intro-text {
     padding-left: 50px;
-    padding-top: 250px;
+    padding-top: 300px;
   }
   header .intro-text .intro-heading {
     font-weight: 600;
@@ -416,6 +446,9 @@ header .intro-text .intro-lead-in {
   font-size: 25px;
   padding-left: 20px;
   margin-bottom: 10px;
+}
+.bg-light-gray {
+  background-color: rgba(200, 220, 220, 0.3);
 }
 section {
   padding: 100px 0;
