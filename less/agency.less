@@ -106,6 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 // Custom Navigation Bar
 .navbar-custom {
     padding: 5px 0px;
+    background-color: white;
     border-color: transparent;
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
     .navbar-brand {
@@ -163,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 // When lower than 1470 adding background to see menu correctly
 @media(min-width:2800px) {
     .navbar-custom {
-        background-color: transparent;
+        background-color: white;
         //This adds a nice effect-> padding: 25px 0;
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
@@ -235,63 +236,82 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 
+.maxim {
+  max-width: 1440px;
+  margin: auto;
+}
+.oclusdent-header{
+  background: url('../img/portada_oclusdent_orig.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  height: 100vh;
+
+}
+
+.oclusdent-header-tablet{
+  background: url('../img/portada_oclusdent_tablet.jpeg');
+  background-repeat: no-repeat;
+  background-color: white;
+  height: 500px;
+}
+
+.navbar-fixed-top {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.bg-light-gray{
+  background-color: rgba(200,220,220,0.3);
+}
+
 header {
-    //height: auto;
-    background: url('../img/portada_oclusdent_phone.jpeg');
-    background-repeat: no-repeat;
-    background-color: white;
-    background-attachment: scroll;
-    background-position: center;
-    text-align: left;
-    min-height: 200px;
-    color: @black-base;
+  color: @black-base;
+  .intro-text {
+      padding: 10px 50px;
+      .intro-heading {
+          .heading-font;
+          font-weight: 600;
+          font-size: 50px;
+      }
+      .intro-heading-color {
+        .heading-font;
+        font-weight: 600;
+        font-size: 50px;
+        color: #2c6f73;
+      }
+      .intro-lead-in {
+        .heading-font;
+        font-size: 30px;
+        font-weight: 300;
+        margin-top: 15px;
+        margin-bottom: 30px;
+      }
+  }
+}
+
+@media(min-width: 990px) {
+  header {
     .intro-text {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        padding-left: 50px;
-        padding-right: 50px;
-        .intro-heading {
-            .heading-font;
-            font-weight: bold;
-            font-style: border-left-width;
-            font-size: 60px;
-        }
-        .intro-lead-in {
-            .heading-font;
-            font-size: 40px;
-            font-weight: bold;
-            margin-bottom: 25px;
-        }
-        .intro-slogan {
-            .body-font;
-            font-size: 30px;
-            margin-bottom: 30px;
-        }
+      padding-left: 50px;
+      padding-top: 250px;
+      .intro-heading {
+          font-weight: 600;
+          font-size: 50px;
+      }
+      .intro-heading-color {
+        font-weight: 600;
+        font-size: 50px;
+        color: #2c6f73;
+      }
+      .intro-lead-in {
+        font-size: 30px;
+        font-weight: 300;
+        margin-top: 15px;
+        margin-bottom: 30px;
+      }
     }
-}
-
-@media(min-width:680px) {
-    header {
-        background: url('../img/portada_oclusdent_tablet.jpeg');
-        background-repeat: no-repeat;
-        background-position: top-left;
-        min-height: 550px;
-        margin-top: 50px;
-    }
-}
-
-@media(min-width:1000px) {
-    header {
-        background: url('../img/portada_oclusdent.jpeg');
-        background-repeat: no-repeat;
-        background-position: top-left;
-        min-height: 850px;
-        margin-top: 50px;
-        .intro-text {
-            padding-top: 250px;
-            padding-bottom: 200px;
-        }
-    }
+  }
 }
 
 .header-top {
@@ -677,7 +697,7 @@ section#home {
 
 .carousel-control{
     &.left, &.right{
-      color: white;
+      color: @theme-primary;
       text-align: center;
       background-image: none;
     }
