@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
-  padding-top: 50px;
+  padding-top: 40px;
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -209,7 +209,7 @@ fieldset[disabled] .btn-sm.active {
   margin: auto;
 }
 .navbar-custom {
-  padding: 5px 0px;
+  padding: 0px 10px;
   background-color: white;
   border-color: transparent;
   transition: top 0.3s;
@@ -217,6 +217,7 @@ fieldset[disabled] .btn-sm.active {
 }
 .navbar-custom .navbar-brand {
   color: #4a4a4a;
+  font-weight: 400;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus {
@@ -242,7 +243,7 @@ fieldset[disabled] .btn-sm.active {
   letter-spacing: 0px;
   color: #4a4a4a;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
 }
 .navbar-custom .nav li a:hover,
@@ -267,7 +268,7 @@ fieldset[disabled] .btn-sm.active {
   background-color: transparent;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #4a4a4a;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
   font-size: 16px;
 }
@@ -308,7 +309,7 @@ fieldset[disabled] .btn-sm.active {
   background-position: center;
   background-color: white;
   min-height: 300px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .oclusdent-header {
   background-image: url('../img/portada_oclusdent_phone.jpeg');
@@ -502,79 +503,8 @@ footer ul.quicklinks {
 .btn:active:focus {
   outline: none;
 }
-.portfolio-modal .modal-dialog {
-  margin: 0;
-  height: 100%;
-  width: auto;
-}
-.portfolio-modal .modal-content {
-  border-radius: 0;
-  background-clip: border-box;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: none;
-  min-height: 100%;
-  padding: 100px 0;
-  text-align: center;
-}
-.portfolio-modal .modal-content h2 {
-  margin-bottom: 15px;
-  font-size: 3em;
-}
-.portfolio-modal .modal-content p {
-  margin-bottom: 30px;
-}
-.portfolio-modal .modal-content p.item-intro {
-  margin: 20px 0 30px;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
-  font-size: 16px;
-}
-.portfolio-modal .modal-content ul.list-inline {
-  margin-bottom: 30px;
-  margin-top: 0;
-}
-.portfolio-modal .modal-content img {
-  margin-bottom: 30px;
-}
-.portfolio-modal .close-modal {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  background-color: transparent;
-  top: 25px;
-  right: 25px;
-  cursor: pointer;
-}
-.portfolio-modal .close-modal:hover {
-  opacity: 0.3;
-}
-.portfolio-modal .close-modal .lr {
-  height: 75px;
-  width: 1px;
-  margin-left: 35px;
-  background-color: #222222;
-  transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  /* IE 9 */
-  -webkit-transform: rotate(45deg);
-  /* Safari and Chrome */
-  z-index: 1051;
-}
-.portfolio-modal .close-modal .lr .rl {
-  height: 75px;
-  width: 1px;
-  background-color: #222222;
-  transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  /* IE 9 */
-  -webkit-transform: rotate(90deg);
-  /* Safari and Chrome */
-  z-index: 1052;
-}
-.portfolio-modal .modal-backdrop {
-  opacity: 0;
-  display: none;
+.tz-gallery {
+  padding: 10px;
 }
 /* Override bootstrap column paddings */
 .tz-gallery .row > div {
@@ -589,8 +519,8 @@ footer ul.quicklinks {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: 0px;
-  margin-left: 0px;
+  margin-top: -13px;
+  margin-left: -13px;
   opacity: 0;
   color: #fff;
   font-size: 26px;
@@ -617,6 +547,11 @@ footer ul.quicklinks {
 }
 .baguetteBox-button {
   background-color: transparent !important;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
 }
 ::-moz-selection {
   text-shadow: none;

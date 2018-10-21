@@ -4,7 +4,7 @@
 // Global Components
 
 body {
-    padding-top: 50px;
+    padding-top: 40px;
     overflow-x: hidden;
     .body-font;
 }
@@ -112,12 +112,13 @@ h1, h2, h3, h4, h5, h6 {
 
 // Custom Navigation Bar
 .navbar-custom {
-    padding: 5px 0px;
+    padding: 0px 10px;
     background-color: white;
     border-color: transparent;
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
     .navbar-brand {
         color: @black-base;
+        font-weight: 400;
         &:hover,
         &:focus {
             color: @black-base;
@@ -145,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {
                 letter-spacing: 0px;
                 color: @black-base;
                 font-size: 16px;
-                font-weight: 600;
+                font-weight: 400;
                 text-transform: uppercase;
                 &:hover,
                 &:focus {
@@ -175,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: transparent;
     .heading-font;
     color: @black-base;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     font-size: 16px;
 }
@@ -223,7 +224,7 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center;
     background-color: white;
     min-height: 300px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .oclusdent-header{
@@ -468,87 +469,8 @@ footer {
     outline: none;
 }
 
-.portfolio-modal {
-    .modal-dialog{
-        margin: 0;
-        height: 100%;
-        width: auto;
-    }
-    .modal-content {
-        border-radius: 0;
-        background-clip: border-box;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        border: none;
-        min-height: 100%;
-        padding: 100px 0;
-        text-align: center;
-        h2 {
-            margin-bottom: 15px;
-            font-size: 3em;
-        }
-        p {
-            margin-bottom: 30px;
-        }
-        p.item-intro {
-            margin: 20px 0 30px;
-            .serif-font;
-            font-style: italic;
-            font-size: 16px;
-        }
-        ul.list-inline {
-            margin-bottom: 30px;
-            margin-top: 0;
-        }
-        img {
-            margin-bottom: 30px;
-        }
-    }
-    .close-modal {
-        position: absolute;
-        width:75px;
-        height:75px;
-        background-color:transparent;
-        top: 25px;
-        right: 25px;
-        cursor: pointer;
-        &:hover {
-            opacity: 0.3;
-        }
-        .lr {
-            height:75px;
-            width:1px;
-            margin-left:35px;
-            background-color: @gray-darker;
-            transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            /* IE 9 */
-            -webkit-transform: rotate(45deg);
-            /* Safari and Chrome */
-            z-index:1051;
-            .rl {
-                height:75px;
-                width:1px;
-                background-color:@gray-darker;
-                transform: rotate(90deg);
-                -ms-transform: rotate(90deg);
-                /* IE 9 */
-                -webkit-transform: rotate(90deg);
-                /* Safari and Chrome */
-                z-index:1052;
-            }
-        }
-    }
-    .modal-backdrop {
-        opacity: 0;
-        display: none;
-    }
-}
-
-
-// Gallery section
-
 .tz-gallery {
+    padding: 10px;
 }
 
 /* Override bootstrap column paddings */
@@ -566,8 +488,8 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: 0px;
-    margin-left: 0px;
+    margin-top: -13px;
+    margin-left: -13px;
     opacity: 0;
     color: #fff;
     font-size: 26px;
@@ -600,10 +522,15 @@ footer {
     background-color: transparent !important;
 }
 
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}
+
 // End of Gallery Section
 
 // Highlight Color Customization
-
 ::-moz-selection {
     text-shadow: none;
     background: @theme-primary;
