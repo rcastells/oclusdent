@@ -6,7 +6,7 @@
 body {
   padding-top: 40px;
   overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .text-muted {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -298,6 +298,7 @@ fieldset[disabled] .btn-sm.active {
 .logo {
   height: 40px;
   margin-top: -10px;
+  padding-top: 2px;
 }
 .maxim {
   max-width: 1440px;
@@ -332,23 +333,24 @@ fieldset[disabled] .btn-sm.active {
 }
 header {
   color: #4a4a4a;
+  padding-top: 50px;
 }
 header .intro-text {
   padding: 10px 30px;
 }
-header .intro-text .intro-heading {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-}
 header .intro-text .intro-heading-color {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-family: "KoHo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
   font-size: 40px;
   color: #2c6f73;
 }
+header .intro-text .intro-heading {
+  font-family: "KoHo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
 header .intro-text .intro-lead-in {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "KoHo", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 25px;
   font-weight: 300;
   margin-top: 5px;
@@ -361,6 +363,11 @@ header .intro-text .intro-lead-in {
   }
 }
 @media (min-width: 767px) {
+  header {
+    padding-top: 0px;
+    height: 100vh;
+    min-height: 850px;
+  }
   header .intro-text {
     padding-left: 50px;
     padding-top: 250px;
@@ -371,18 +378,15 @@ header .intro-text .intro-lead-in {
     padding-left: 50px;
     padding-top: 300px;
   }
-  header .intro-text .intro-heading {
-    font-weight: 600;
-    font-size: 50px;
-  }
   header .intro-text .intro-heading-color {
-    font-weight: 600;
     font-size: 50px;
     color: #2c6f73;
   }
+  header .intro-text .intro-heading {
+    font-size: 35px;
+  }
   header .intro-text .intro-lead-in {
     font-size: 30px;
-    font-weight: 300;
     margin-top: 15px;
     margin-bottom: 30px;
   }

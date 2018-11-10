@@ -10,7 +10,7 @@ body {
 }
 
 .text-muted {
-    .heading-font;
+    .body-font;
     font-size: 16px;
     color: @black-base;
 }
@@ -53,7 +53,7 @@ a.active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    .heading-font;
+    .body-font;
     color: @black-base;
     font-weight: 700;
 }
@@ -80,13 +80,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary {
     .button-variant(white; @theme-primary; @theme-primary);
-    .heading-font;
+    .body-font;
     font-weight: 500;
 }
 
 .btn-xl {
     .button-variant(white; #2C6F73; #2C6F73);
-    .heading-font;
+    .body-font;
     font-weight: 500;
     border-radius: 25px;
     font-size: 14px;
@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-sm {
     .button-variant(white; #2C6F73; #2C6F73);
-    .heading-font;
+    .body-font;
     font-weight: 500;
     border-radius: 25px;
     font-size: 14px;
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-toggle {
         background-color: @theme-primary;
         border-color: @theme-primary;
-        .heading-font;
+        .body-font;
         color: white;
         font-size: 16px;
         &:hover,
@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
     .nav {
         li {
             a {
-                .heading-font;
+                .body-font;
                 font-weight: 600px;
                 letter-spacing: 0px;
                 color: @black-base;
@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 13px 10px;
     border-color: transparent;
     background-color: transparent;
-    .heading-font;
+    .body-font;
     color: @black-base;
     font-weight: 400;
     text-transform: uppercase;
@@ -211,6 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 .logo{
   height: 40px;
   margin-top: -10px;
+  padding-top: 2px;
 }
 
 .maxim {
@@ -251,19 +252,19 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
   color: @black-base;
+  padding-top: 50px;
   .intro-text {
       padding: 10px 30px;
-      //margin-top: 10px;
-      .intro-heading {
-          .heading-font;
-          font-weight: 600;
-          font-size: 30px;
-      }
       .intro-heading-color {
         .heading-font;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 40px;
         color: #2c6f73;
+      }
+      .intro-heading {
+          .heading-font;
+          font-weight: 400;
+          font-size: 30px;
       }
       .intro-lead-in {
         .heading-font;
@@ -286,6 +287,9 @@ header {
 
 @media(min-width: 767px){
   header {
+    padding-top: 0px;
+    height: 100vh;
+    min-height: 850px;
     .intro-text {
       padding-left: 50px;
       padding-top: 250px;
@@ -298,18 +302,15 @@ header {
     .intro-text {
       padding-left: 50px;
       padding-top: 300px;
-      .intro-heading {
-          font-weight: 600;
-          font-size: 50px;
-      }
       .intro-heading-color {
-        font-weight: 600;
         font-size: 50px;
         color: #2c6f73;
       }
+      .intro-heading {
+        font-size: 35px;
+      }
       .intro-lead-in {
         font-size: 30px;
-        font-weight: 300;
         margin-top: 15px;
         margin-bottom: 30px;
       }
@@ -450,13 +451,13 @@ footer {
     span.copyright {
         line-height: 40px;
         color: @black-base;
-        .heading-font;
+        .body-font;
         text-transform: none;
     }
     ul.quicklinks {
         margin-bottom: 0;
         line-height: 40px;
-        .heading-font;
+        .body-font;
         color: @black-base;
         text-transform: none;
     }
