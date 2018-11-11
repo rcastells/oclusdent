@@ -204,6 +204,11 @@ fieldset[disabled] .btn-sm.active {
   color: #2C6F73;
   background-color: white;
 }
+@media (max-width: 320px) {
+  .btn-sm {
+    font-size: 12px;
+  }
+}
 .navbar-fixed-top {
   max-width: 1440px;
   margin: auto;
@@ -297,8 +302,14 @@ fieldset[disabled] .btn-sm.active {
 }
 .logo {
   height: 40px;
-  margin-top: -10px;
-  padding-top: 2px;
+  margin-top: -5px;
+}
+@media (min-width: 400px) {
+  .logo {
+    height: 40px;
+    margin-top: -10px;
+    padding-top: 2px;
+  }
 }
 .maxim {
   max-width: 1440px;
@@ -321,13 +332,13 @@ fieldset[disabled] .btn-sm.active {
 @media (max-width: 989px) {
   .oclusdent-header {
     background-image: url('../img/portada_oclusdent_orig.jpeg');
-    height: 100vh;
+    background-position: -600px -100px, 0px 0px;
+    min-height: 850px;
   }
 }
 @media (min-width: 950px) {
   .oclusdent-header {
     background-image: url('../img/portada_oclusdent_orig.jpeg');
-    height: 100vh;
     min-height: 850px;
   }
 }
@@ -337,6 +348,7 @@ header {
 }
 header .intro-text {
   padding: 10px 30px;
+  margin-bottom: 40px;
 }
 header .intro-text .intro-heading-color {
   font-family: "KoHo", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -360,12 +372,12 @@ header .intro-text .intro-lead-in {
   header .intro-text {
     padding: 10px 50px;
     margin-top: 10px;
+    margin-bottom: 0px;
   }
 }
 @media (min-width: 767px) {
   header {
     padding-top: 0px;
-    height: 100vh;
     min-height: 850px;
   }
   header .intro-text {
@@ -413,11 +425,6 @@ section h3.section-subheading {
   font-weight: 400;
   margin-bottom: 75px;
 }
-/*@media(min-width:768px) {
-    section {
-        padding: 150px 0;
-    }
-}*/
 section#home .section-heading {
   color: #4a4a4a;
 }
@@ -556,14 +563,6 @@ footer ul.quicklinks {
   body {
     padding: 0;
   }
-}
-::-moz-selection {
-  text-shadow: none;
-  background: #2c6f73;
-}
-::selection {
-  text-shadow: none;
-  background: #2c6f73;
 }
 img::selection {
   background: transparent;

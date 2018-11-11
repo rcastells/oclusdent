@@ -104,6 +104,13 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+// To fix small phones button problem
+@media(max-width: 320px){
+  .btn-sm {
+      font-size: 12px;
+  }
+}
+
 // To make all content centered
 .navbar-fixed-top {
   max-width: 1440px;
@@ -210,8 +217,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo{
   height: 40px;
-  margin-top: -10px;
-  padding-top: 2px;
+  margin-top: -5px;
+}
+
+@media(min-width:400px){
+  .logo{
+    height: 40px;
+    margin-top: -10px;
+    padding-top: 2px;
+  }
 }
 
 .maxim {
@@ -238,14 +252,16 @@ h1, h2, h3, h4, h5, h6 {
 @media(max-width:989px){
   .oclusdent-header{
       background-image: url('../img/portada_oclusdent_orig.jpeg');
-      height: 100vh;
+      //height: 100vh;
+      background-position: -600px -100px, 0px 0px;
+      min-height: 850px;
   }
 }
 
 @media(min-width:950px){
   .oclusdent-header{
       background-image: url('../img/portada_oclusdent_orig.jpeg');
-      height: 100vh;
+      //height: 100vh;
       min-height: 850px;
   }
 }
@@ -255,6 +271,7 @@ header {
   padding-top: 50px;
   .intro-text {
       padding: 10px 30px;
+      margin-bottom: 40px;
       .intro-heading-color {
         .heading-font;
         font-weight: 400;
@@ -281,6 +298,7 @@ header {
     .intro-text {
       padding: 10px 50px;
       margin-top: 10px;
+      margin-bottom: 0px;
     }
   }
 }
@@ -288,7 +306,6 @@ header {
 @media(min-width: 767px){
   header {
     padding-top: 0px;
-    height: 100vh;
     min-height: 850px;
     .intro-text {
       padding-left: 50px;
@@ -345,14 +362,7 @@ section {
     }
 }
 
-/*@media(min-width:768px) {
-    section {
-        padding: 150px 0;
-    }
-}*/
-
 // Home Section
-
 section#home {
     .section-heading {
         color: @black-base;
@@ -360,7 +370,6 @@ section#home {
 }
 
 // Services Section
-
 .service-heading {
     margin: 0px 0;
     font-size: 16px;
@@ -425,7 +434,6 @@ section#home {
 }
 
 // Contact Section
-
 .green {
     color: #2C6F73;
 }
@@ -444,7 +452,6 @@ section#contact {
 }
 
 // Footer
-
 footer {
     padding: 25px 0;
     text-align: center;
@@ -530,17 +537,6 @@ footer {
 }
 
 // End of Gallery Section
-
-// Highlight Color Customization
-::-moz-selection {
-    text-shadow: none;
-    background: @theme-primary;
-}
-
-::selection {
-    text-shadow: none;
-    background: @theme-primary;
-}
 
 img::selection {
     background: transparent;
