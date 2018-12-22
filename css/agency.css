@@ -316,7 +316,7 @@ fieldset[disabled] .btn-sm.active {
   margin: auto;
 }
 .oclusdent-header-phone {
-  background: url('../img/portada_oclusdent_phone.jpeg');
+  background: url('../img/cover_phone.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-color: white;
@@ -324,21 +324,21 @@ fieldset[disabled] .btn-sm.active {
   margin-top: 10px;
 }
 .oclusdent-header {
-  background-image: url('../img/portada_oclusdent_phone.jpeg');
+  background-image: url('../img/cover_phone.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-color: white;
 }
 @media (max-width: 989px) {
   .oclusdent-header {
-    background-image: url('../img/portada_oclusdent_orig.jpeg');
+    background-image: url('../img/cover.jpeg');
     background-position: -600px -100px, 0px 0px;
     min-height: 850px;
   }
 }
 @media (min-width: 950px) {
   .oclusdent-header {
-    background-image: url('../img/portada_oclusdent_orig.jpeg');
+    background-image: url('../img/cover.jpeg');
     min-height: 850px;
   }
 }
@@ -353,7 +353,7 @@ header .intro-text {
 header .intro-text .intro-heading-color {
   font-family: "Maven Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 45px;
   font-size: 40px;
   color: #2c6f73;
 }
