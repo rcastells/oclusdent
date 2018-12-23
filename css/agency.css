@@ -315,7 +315,7 @@ fieldset[disabled] .btn-sm.active {
   max-width: 1440px;
   margin: auto;
 }
-.oclusdent-header-phone {
+.oclusdent-phone {
   background: url('../img/cover_phone.jpeg');
   background-repeat: no-repeat;
   background-position: center;
@@ -323,23 +323,24 @@ fieldset[disabled] .btn-sm.active {
   min-height: 300px;
   margin-top: 10px;
 }
-.oclusdent-header {
+.oclusdent {
   background-image: url('../img/cover_phone.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-color: white;
 }
-@media (max-width: 989px) {
-  .oclusdent-header {
+@media (max-width: 1199px) {
+  .oclusdent {
     background-image: url('../img/cover.jpeg');
-    background-position: -600px -100px, 0px 0px;
-    min-height: 850px;
+    background-position: -600px -250px, 0px 0px;
+    min-height: 650px;
   }
 }
-@media (min-width: 950px) {
-  .oclusdent-header {
+@media (min-width: 1200px) {
+  .oclusdent {
     background-image: url('../img/cover.jpeg');
-    min-height: 850px;
+    background-position: -300px -250px, 0px 0px;
+    min-height: 650px;
   }
 }
 header {
@@ -380,7 +381,7 @@ header .intro-text .intro-lead-in {
 @media (min-width: 767px) {
   header {
     padding-top: 0px;
-    min-height: 850px;
+    min-height: 650px;
   }
   header .intro-text {
     padding-left: 50px;
